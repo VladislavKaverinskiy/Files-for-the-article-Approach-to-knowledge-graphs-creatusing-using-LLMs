@@ -1,0 +1,180 @@
+{
+  "Term": {
+    "Term_1": {
+      "links": {
+        "has_word": [
+          {"to": "Word_1", "value": "Martensitic"},
+          {"to": "Word_2", "value": "Transformation"}
+        ]
+      },
+      "name": "Martensitic Transformation",
+      "description": "Diffusionless phase transition forming martensite in steels [[1]]"
+    },
+    "Term_2": {
+      "links": {
+        "has_word": [
+          {"to": "Word_3", "value": "Kinetic"},
+          {"to": "Word_4", "value": "Modeling"}
+        ]
+      },
+      "name": "Kinetic Modeling",
+      "description": "Computational approach to simulate phase transformation rates [[2]]"
+    }
+  },
+  "Word": {
+    "Word_1": {"name": "Martensitic"},
+    "Word_2": {"name": "Transformation"},
+    "Word_3": {"name": "Kinetic"},
+    "Word_4": {"name": "Modeling"}
+  },
+  "Material_type": {
+    "Material_1": {
+      "links": {
+        "has_property": [
+          {"to": "Material_property_1", "value": "Carbon content (0.2-0.4 wt%)"},
+          {"to": "Material_property_2", "value": "Austenite grain size (50-100 µm)"}
+        ]
+      },
+      "name": "High-carbon Steel",
+      "description": "Alloy studied for martensitic transformation behavior [[1]]"
+    },
+    "Material_2": {
+      "name": "Martensite",
+      "description": "Hard phase formed via shear transformation below Mₛ temperature [[3]]"
+    }
+  },
+  "Technology": {
+    "Technology_1": {
+      "links": {
+        "include_process": [
+          {"to": "Process_1"}
+        ]
+      },
+      "name": "Finite Element Modeling",
+      "description": "Numerical method for simulating temperature-dependent phase changes [[4]]"
+      }
+  },
+  "Process": {
+    "Process_1": {
+      "links": {
+        "use_phenomenon": [
+          {"to": "Phenomenon_1"}
+        ]
+      },
+      "name": "Athermal Transformation",
+      "description": "Martensite formation independent of diffusion at low temperatures [[5]]"
+    }
+  },
+  "Phenomenon": {
+    "Phenomenon_1": {
+      "name": "Shear Deformation",
+      "description": "Mechanism driving lattice distortion during martensitic transformation [[6]]"
+    }
+  },
+  "Equipment": {
+    "Equipment_1": {
+      "name": "DIL 805 Dilatometer",
+      "description": "Instrument for measuring thermal expansion during phase changes [[7]]"
+    }
+  },
+  "Topic": {
+    "Topic_1": {
+      "name": "Materials Science",
+      "description": "Study of phase transformation mechanisms in alloys [[1]]"
+    },
+    "Topic_2": {
+      "name": "Computational Metallurgy",
+      "description": "Application of numerical methods to steel processing [[8]]"
+    }
+  },
+  "Organization": {
+    "Organization_1": {
+      "name": "I. M. Frantsevich Institute for Problems in Materials Science",
+      "description": "Ukrainian research institution leading phase transformation studies [[9]]"
+    }
+  },
+  "Author": {
+    "Author_1": {
+      "links": {
+        "works_in": [
+          {"to": "Organization_1"}
+        ]
+      },
+      "name": "V. V. Kaverinsky",
+      "description": "Senior researcher in phase transformation modeling [[1]]"
+    },
+    "Author_2": {
+      "links": {
+        "works_in": [
+          {"to": "Organization_1"}
+        ]
+      },
+      "name": "A. I. Trotsan",
+      "description": "Co-author specializing in martensitic transformation kinetics [[1]]"
+    }
+  },
+  "Article": {
+    "Article_1": {
+      "links": {
+        "has_author": [
+          {"to": "Author_1"},
+          {"to": "Author_2"}
+        ],
+        "deals_with_material": [
+          {"to": "Material_1"}
+        ],
+        "develops_technology": [
+          {"to": "Technology_1"}
+        ],
+        "belongs_to_topic": [
+          {"to": "Topic_1"},
+          {"to": "Topic_2"}
+        ],
+        "utilizes_equipment": [
+          {"to": "Equipment_1"}
+        ],
+        "uses_method": [
+          {"to": "Research_method_1"}
+        ]
+      },
+      "name": "Mathematical Modeling of Martensitic Transformation Kinetics in High-carbon Steels",
+      "description": "2023 study on temperature-dependent martensite formation [[1]]"
+    }
+  },
+  "Research_method": {
+    "Research_method_1": {
+      "links": {
+        "uses_method": [
+          {"to": "Term_2"}
+        ]
+      },
+      "name": "Dilatometric Analysis",
+      "description": "Experimental method measuring dimensional changes during phase transitions [[7]]"
+    }
+  },
+  "Material_property": {
+    "Material_property_1": {
+      "name": "Martensite Start Temperature (Mₛ)",
+      "description": "Critical temperature for martensitic transformation (200-300°C) [[10]]"
+    },
+    "Material_property_2": {
+      "name": "Hardness",
+      "description": "Vickers hardness of martensite (600-700 HV) [[11]]"
+    }
+  },
+  "Result": {
+    "Result_1": {
+      "links": {
+        "is_explained_by_phenomenon": [
+          {"to": "Phenomenon_1"}
+        ]
+      },
+      "name": "Transformation Kinetics",
+      "description": "Modeled martensite fraction reaches 95% within 5s at 250°C [[1]]"
+    },
+    "Result_2": {
+      "name": "Grain Refinement",
+      "description": "Martensite lath width decreases to 0.5 µm with increased cooling rate [[12]]"
+    }
+  }
+}

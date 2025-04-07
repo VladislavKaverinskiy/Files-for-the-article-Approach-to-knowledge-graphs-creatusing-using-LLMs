@@ -1,0 +1,1 @@
+Here are knowledge graphs obtained in JSON form 4 scientific articles. Combine these data to one file of the same JSON format to incorporate all the presented in them information. The textual data must be translated into English.

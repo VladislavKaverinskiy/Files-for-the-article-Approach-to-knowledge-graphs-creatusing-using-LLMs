@@ -1,0 +1,35 @@
+Your task is to build a knowledge graph using the provided texts of scientific articles in the domain of material science, focusing mostly on the metadata and brief information on the main results and facts mentioned in abstracts and conclusions. Output must be in English regardless of what language was used in the article.
+The graph must be presented in the following JSON form:
+	Class_name: {class_member_name: {links: {link_type: [{to: class_members_name, value: qualitative_or_quantitative_characteristic_of_the_link_if_exist }]}, name: verbose_name, description: verbose_desctiption}}
+
+The knowledge graph must have the following entities:
+Classes:
+Key word – a scientific term from a particular subject area, can be a noun or a verb of a particular name or verb group – pay attention to the key-words presented in the article.
+Technology – a production technology studied, developed or described in the article.
+Process – a physical, chemical or other natural processes that goes in particular conditions studied or described in the article.
+Phenomenon – a natural fact that is studied or occurs in some conditions.
+Equipment – things used for studying or producing something.
+Topic – a particular subject area the described research or technology belongs to.
+Organization – a scientific, industrial or other organization (company) where the research or production process had a place.
+Author – a person who has written a particular article
+Article – a piece of text and info graphics to describe a research process and results, must have a name
+Research method – a method used to study something
+Material property – physical, mechanical of usability property of a material studied in the article.
+Result – a certain result to which the studied and described actions lead obtained in an article. Requires explanation in the description.
+
+Links:
+	deals with material (from Article to Material type)
+	studies property (from Article or Research method to Material property), 
+	studies process (from Article to Process)
+	include process (from Technology to Process)
+	applied to material (from Technology to Material)
+	has results (from Article to Result)
+	develops technology (from Article to Technology)
+	involve process (from Technology to Process)
+	use phenomenon (from Technology or Process to Phenomenon)
+	utilizes equipment (from Article or Technology or Research method to Equipment)
+	belongs to topic (from Article or Phenomenon or Process or Technology to Topic)
+	has author (from Article to Author)
+	works in (from Author to Organization)
+	uses method (from Article to Research method)
+	includes terms (from Article to Key word)

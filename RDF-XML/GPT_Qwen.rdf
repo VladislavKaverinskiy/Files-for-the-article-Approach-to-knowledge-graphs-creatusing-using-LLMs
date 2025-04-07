@@ -1,0 +1,450 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+         xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+         xmlns:ex="http://example.org/materials#">
+
+    <!-- Key_word entries -->
+    <rdf:Description rdf:about="http://example.org/Key_word/phase_diagrams">
+        <rdf:type rdf:resource="http://example.org/Key_word"/>
+        <ex:name>Phase Diagrams</ex:name>
+        <ex:description>Scientific representations of equilibrium between phases in materials; used as a key term in the austenite decomposition study.</ex:description>
+    </rdf:Description>
+
+    <rdf:Description rdf:about="http://example.org/Key_word/kinetics">
+        <rdf:type rdf:resource="http://example.org/Key_word"/>
+        <ex:name>Kinetics</ex:name>
+        <ex:description>The study of transformation rates; featured in all three articles addressing phase change speeds.</ex:description>
+    </rdf:Description>
+
+    <rdf:Description rdf:about="http://example.org/Key_word/austenite">
+        <rdf:type rdf:resource="http://example.org/Key_word"/>
+        <ex:name>Austenite</ex:name>
+        <ex:description>A high-temperature phase of steel that transforms into various phases upon cooling; central to the studies.</ex:description>
+    </rdf:Description>
+
+    <rdf:Description rdf:about="http://example.org/Key_word/steel">
+        <rdf:type rdf:resource="http://example.org/Key_word"/>
+        <ex:name>Steel</ex:name>
+        <ex:description>An alloy of iron and carbon; the primary material investigated in the articles.</ex:description>
+    </rdf:Description>
+
+    <rdf:Description rdf:about="http://example.org/Key_word/modelling">
+        <rdf:type rdf:resource="http://example.org/Key_word"/>
+        <ex:name>Modelling</ex:name>
+        <ex:description>The process of simulating physical phenomena using mathematical models; a key approach in the studies.</ex:description>
+    </rdf:Description>
+
+    <rdf:Description rdf:about="http://example.org/Key_word/recrystallization">
+        <rdf:type rdf:resource="http://example.org/Key_word"/>
+        <ex:name>Recrystallization</ex:name>
+        <ex:description>A process that reduces dislocation density in deformed metals; the focus of the second article.</ex:description>
+    </rdf:Description>
+
+    <rdf:Description rdf:about="http://example.org/Key_word/carbonitride">
+        <rdf:type rdf:resource="http://example.org/Key_word"/>
+        <ex:name>Carbonitride</ex:name>
+        <ex:description>Compounds precipitated in steels influencing recovery and recrystallization; discussed in the recrystallization study.</ex:description>
+    </rdf:Description>
+
+    <rdf:Description rdf:about="http://example.org/Key_word/CCT_diagram">
+        <rdf:type rdf:resource="http://example.org/Key_word"/>
+        <ex:name>CCT Diagram</ex:name>
+        <ex:description>Continuous cooling transformation diagram; mentioned in the evaluation of phase transformation in medium‐carbon steel.</ex:description>
+    </rdf:Description>
+
+    <rdf:Description rdf:about="http://example.org/Key_word/medium-carbon_steel">
+        <rdf:type rdf:resource="http://example.org/Key_word"/>
+        <ex:name>Medium-Carbon Steel</ex:name>
+        <ex:description>Steel with intermediate carbon content; studied in the thermodynamic and kinetic calculation article.</ex:description>
+    </rdf:Description>
+
+    <!-- Technology entries -->
+    <rdf:Description rdf:about="http://example.org/Technology/Mathematical_Model_C++">
+        <rdf:type rdf:resource="http://example.org/Technology"/>
+        <ex:name>Mathematical Model (C++)</ex:name>
+        <ex:description>A computer-based mathematical model implemented in C++ for simulating the kinetics of phase transformations (ferrite, pearlite, bainite, martensite) in alloyed steels.</ex:description>
+        
+        <ex:include_process>
+            <rdf:Description>
+                <ex:links_to rdf:resource="http://example.org/Process/Austenite_Decomposition"/>
+                <ex:has_value></ex:has_value>
+            </rdf:Description>
+        </ex:include_process>
+    </rdf:Description>
+
+    <rdf:Description rdf:about="http://example.org/Technology/Recrystallization_Modelling_Technology_Python">
+        <rdf:type rdf:resource="http://example.org/Technology"/>
+        <ex:name>Recrystallization Modelling Technology (Python)</ex:name>
+        <ex:description>A semi-empirical computer modelling approach implemented in Python for simulating recrystallization kinetics and carbonitride particle precipitation in deformed austenite.</ex:description>
+        
+        <ex:include_process>
+            <rdf:Description>
+                <ex:links_to rdf:resource="http://example.org/Process/Recrystallization"/>
+                <ex:has_value></ex:has_value>
+            </rdf:Description>
+        </ex:include_process>
+        
+        <ex:include_process>
+            <rdf:Description>
+                <ex:links_to rdf:resource="http://example.org/Process/Carbonitride_Precipitation"/>
+                <ex:has_value></ex:has_value>
+            </rdf:Description>
+        </ex:include_process>
+    </rdf:Description>
+
+    <rdf:Description rdf:about="http://example.org/Technology/Thermodynamic_and_Kinetic_Calculation_Model_CALPHAD-based">
+        <rdf:type rdf:resource="http://example.org/Technology"/>
+        <ex:name>Thermodynamic and Kinetic Calculation Model (CALPHAD-based)</ex:name>
+        <ex:description>A computer model based on the CALPHAD method for calculating thermodynamic equilibria and kinetic phase transformations in medium‐carbon alloyed steels.</ex:description>
+        
+        <ex:include_process>
+            <rdf:Description>
+                <ex:links_to rdf:resource="http://example.org/Process/Phase_Transformation"/>
+                <ex:has_value></ex:has_value>
+            </rdf:Description>
+        </ex:include_process>
+    </rdf:Description>
+
+    <!-- Process entries -->
+    <rdf:Description rdf:about="http://example.org/Process/Austenite_Decomposition">
+        <rdf:type rdf:resource="http://example.org/Process"/>
+        <ex:name>Austenite Decomposition</ex:name>
+        <ex:description>The transformation of supercooled austenite into phases such as ferrite, pearlite, bainite, and martensite; modeled and validated in the first article.</ex:description>
+        
+        <ex:use_phenomenon>
+            <rdf:Description>
+                <ex:links_to rdf:resource="http://example.org/Key_word/Phase_Transformation_Kinetics"/>
+                <ex:has_value></ex:has_value>
+            </rdf:Description>
+        </ex:use_phenomenon>
+    </rdf:Description>
+
+    <rdf:Description rdf:about="http://example.org/Process/Recrystallization">
+        <rdf:type rdf:resource="http://example.org/Process"/>
+        <ex:name>Recrystallization</ex:name>
+        <ex:description>The process of new grain formation in deformed metals, reducing dislocation density; simulated in the second article.</ex:description>
+    </rdf:Description>
+
+    <rdf:Description rdf:about="http://example.org/Process/Carbonitride_Precipitation">
+        <rdf:type rdf:resource="http://example.org/Process"/>
+        <ex:name>Carbonitride Precipitation</ex:name>
+        <ex:description>The nucleation and growth of carbonitride particles in deformed austenite, affecting recovery and recrystallization; a key process in the second study.</ex:description>
+    </rdf:Description>
+
+    <rdf:Description rdf:about="http://example.org/Process/Phase_Transformation">
+        <rdf:type rdf:resource="http://example.org/Process"/>
+        <ex:name>Phase Transformation</ex:name>
+        <ex:description>The change in phase composition (e.g., formation of ferrite, bainite, martensite) during cooling or isothermal processes; addressed in the third article.</ex:description>
+    </rdf:Description>
+
+    <!-- Phenomenon entry -->
+    <rdf:Description rdf:about="http://example.org/Phenomenon/Ostwald_Ripening">
+        <rdf:type rdf:resource="http://example.org/Phenomenon"/>
+        <ex:name>Ostwald Ripening</ex:name>
+        <ex:description>A phenomenon where larger particles grow at the expense of smaller ones due to differences in solubility; mentioned in the context of carbonitride particle evolution.</ex:description>
+    </rdf:Description>
+
+    <!-- Topic entries -->
+    <rdf:Description rdf:about="http://example.org/Topic/Phase_Transformations_in_Steels">
+        <rdf:type rdf:resource="http://example.org/Topic"/>
+        <ex:name>Phase Transformations in Steels</ex:name>
+        <ex:description>A subject area focusing on the changes in phase compositions in steels under various thermal and mechanical conditions.</ex:description>
+        
+        <ex:belongs_to_topic>
+            <rdf:Description>
+                <ex:links_to rdf:resource="http://example.org/Process/Austenite_Decomposition"/>
+                <ex:has_value></ex:has_value>
+            </rdf:Description>
+        </ex:belongs_to_topic>
+        
+        <ex:belongs_to_topic>
+            <rdf:Description>
+                <ex:links_to rdf:resource="http://example.org/Process/Phase_Transformation"/>
+                <ex:has_value></ex:has_value>
+            </rdf:Description>
+        </ex:belongs_to_topic>
+    </rdf:Description>
+
+    <rdf:Description rdf:about="http://example.org/Topic/Recrystallization_and_Recovery_in_Steels">
+        <rdf:type rdf:resource="http://example.org/Topic"/>
+        <ex:name>Recrystallization and Recovery in Steels</ex:name>
+        <ex:description>A research area that deals with the processes of recrystallization and recovery in deformed steels, influenced by precipitated phases.</ex:description>
+        
+        <ex:belongs_to_topic>
+            <rdf:Description>
+                <ex:links_to rdf:resource="http://example.org/Process/Recrystallization"/>
+                <ex:has_value></ex:has_value>
+            </rdf:Description>
+        </ex:belongs_to_topic>
+        
+        <ex:belongs_to_topic>
+            <rdf:Description>
+                <ex:links_to rdf:resource="http://example.org/Process/Carbonitride_Precipitation"/>
+                <ex:has_value></ex:has_value>
+            </rdf:Description>
+        </ex:belongs_to_topic>
+    </rdf:Description>
+
+    <!-- Organization entry -->
+    <rdf:Description rdf:about="http://example.org/Organization/I_M_Frantsevich_Institute">
+        <rdf:type rdf:resource="http://example.org/Organization"/>
+        <ex:name>I. M. Frantsevich Institute for Problems in Materials Science</ex:name>
+        <ex:description>A research institute located in Kyiv, Ukraine, where the studies on phase transformations and recrystallization were conducted.</ex:description>
+    </rdf:Description>
+
+    <!-- Author entries -->
+    <rdf:Description rdf:about="http://example.org/Author/V_V_Kaverynsky">
+        <rdf:type rdf:resource="http://example.org/Author"/>
+        <ex:name>V. V. Kaverynsky</ex:name>
+        <ex:description>Co-author of studies on austenite decomposition, phase transformation kinetics, and thermodynamic modelling in steels.</ex:description>
+        
+        <ex:works_in>
+            <rdf:Description>
+                <ex:links_to rdf:resource="http://example.org/Organization/I_M_Frantsevich_Institute"/>
+                <ex:has_value></ex:has_value>
+            </rdf:Description>
+        </ex:works_in>
+    </rdf:Description>
+
+    <rdf:Description rdf:about="http://example.org/Author/A_I_Trotsan">
+        <rdf:type rdf:resource="http://example.org/Author"/>
+        <ex:name>A. I. Trotsan</ex:name>
+        <ex:description>Co-author of the study on the kinetics of decomposition of supercooled austenite in alloyed steels.</ex:description>
+        
+        <ex:works_in>
+            <rdf:Description>
+                <ex:links_to rdf:resource="http://example.org/Organization/I_M_Frantsevich_Institute"/>
+                <ex:has_value></ex:has_value>
+            </rdf:Description>
+        </ex:works_in>
+    </rdf:Description>
+
+    <rdf:Description rdf:about="http://example.org/Author/Z_P_Sukhenko">
+        <rdf:type rdf:resource="http://example.org/Author"/>
+        <ex:name>Z. P. Sukhenko</ex:name>
+        <ex:description>Co-author involved in all three studies addressing phase transformations, recrystallization, and thermodynamic modelling in steels.</ex:description>
+        
+        <ex:works_in>
+            <rdf:Description>
+                <ex:links_to rdf:resource="http://example.org/Organization/I_M_Frantsevich_Institute"/>
+                <ex:has_value></ex:has_value>
+            </rdf:Description>
+        </ex:works_in>
+    </rdf:Description>
+
+    <!-- Article entries -->
+    <rdf:Description rdf:about="http://example.org/Article/Mathematical_Modelling_Austenite_Decomposition">
+        <rdf:type rdf:resource="http://example.org/Article"/>
+        <ex:name>Mathematical Modelling of Kinetics of Decomposition of the Supercooled Austenite in Alloyed Steels</ex:name>
+        <ex:description>A study presenting a C++-based mathematical model for simulating the thermodynamics and kinetics of phase transformations (including ferrite, pearlite, bainite, and martensite formation) in alloyed steels; validated with experimental data.</ex:description>
+        
+        <ex:has_author>
+            <rdf:Description>
+                <ex:links_to rdf:resource="http://example.org/Author/V_V_Kaverynsky"/>
+                <ex:has_value></ex:has_value>
+            </rdf:Description>
+        </ex:has_author>
+        
+        <ex:has_author>
+            <rdf:Description>
+                <ex:links_to rdf:resource="http://example.org/Author/A_I_Trotsan"/>
+                <ex:has_value></ex:has_value>
+            </rdf:Description>
+        </ex:has_author>
+        
+        <ex:has_author>
+            <rdf:Description>
+                <ex:links_to rdf:resource="http://example.org/Author/Z_P_Sukhenko"/>
+                <ex:has_value></ex:has_value>
+            </rdf:Description>
+        </ex:has_author>
+        
+        <ex:develops_technology>
+            <rdf:Description>
+                <ex:links_to rdf:resource="http://example.org/Technology/Mathematical_Model_C++"/>
+                <ex:has_value></ex:has_value>
+            </rdf:Description>
+        </ex:develops_technology>
+        
+        <ex:studies_process>
+            <rdf:Description>
+                <ex:links_to rdf:resource="http://example.org/Process/Austenite_Decomposition"/>
+                <ex:has_value></ex:has_value>
+            </rdf:Description>
+        </ex:studies_process>
+        
+        <ex:includes_terms rdf:resource="http://example.org/Key_word/phase_diagrams"/>
+        <ex:includes_terms rdf:resource="http://example.org/Key_word/kinetics"/>
+        <ex:includes_terms rdf:resource="http://example.org/Key_word/austenite"/>
+        <ex:includes_terms rdf:resource="http://example.org/Key_word/steel"/>
+        <ex:includes_terms rdf:resource="http://example.org/Key_word/modelling"/>
+        
+        <ex:belongs_to_topic>
+            <rdf:Description>
+                <ex:links_to rdf:resource="http://example.org/Topic/Phase_Transformations_in_Steels"/>
+                <ex:has_value></ex:has_value>
+            </rdf:Description>
+        </ex:belongs_to_topic>
+    </rdf:Description>
+
+    <rdf:Description rdf:about="http://example.org/Article/Mathematical_Modelling_Recrystallization_Kinetics">
+        <rdf:type rdf:resource="http://example.org/Article"/>
+        <ex:name>Mathematical Modelling of Primary Recrystallization Kinetics and Precipitation of Carbonitride Particles in Steels. II. Recrystallization Kinetics</ex:name>
+        <ex:description>A study employing a Python-based semi-empirical model to simulate recrystallization kinetics and carbonitride particle precipitation in deformed austenite, demonstrating the effect of Nb content on the slowing of recrystallization and recovery.</ex:description>
+        
+        <ex:has_author>
+            <rdf:Description>
+                <ex:links_to rdf:resource="http://example.org/Author/V_V_Kaverynsky"/>
+                <ex:has_value></ex:has_value>
+            </rdf:Description>
+        </ex:has_author>
+        
+        <ex:has_author>
+            <rdf:Description>
+                <ex:links_to rdf:resource="http://example.org/Author/Z_P_Sukhenko"/>
+                <ex:has_value></ex:has_value>
+            </rdf:Description>
+        </ex:has_author>
+        
+        <ex:develops_technology>
+            <rdf:Description>
+                <ex:links_to rdf:resource="http://example.org/Technology/Recrystallization_Modelling_Technology_Python"/>
+                <ex:has_value></ex:has_value>
+            </rdf:Description>
+        </ex:develops_technology>
+        
+        <ex:studies_process>
+            <rdf:Description>
+                <ex:links_to rdf:resource="http://example.org/Process/Recrystallization"/>
+                <ex:has_value></ex:has_value>
+            </rdf:Description>
+        </ex:studies_process>
+        
+        <ex:studies_process>
+            <rdf:Description>
+                <ex:links_to rdf:resource="http://example.org/Process/Carbonitride_Precipitation"/>
+                <ex:has_value></ex:has_value>
+            </rdf:Description>
+        </ex:studies_process>
+        
+        <ex:uses_method>
+            <rdf:Description>
+                <ex:links_to rdf:resource="http://example.org/Research_method/Semi-empirical_Modelling"/>
+                <ex:has_value></ex:has_value>
+            </rdf:Description>
+        </ex:uses_method>
+        
+        <ex:includes_terms rdf:resource="http://example.org/Key_word/recrystallization"/>
+        <ex:includes_terms rdf:resource="http://example.org/Key_word/kinetics"/>
+        <ex:includes_terms rdf:resource="http://example.org/Key_word/austenite"/>
+        <ex:includes_terms rdf:resource="http://example.org/Key_word/steel"/>
+        <ex:includes_terms rdf:resource="http://example.org/Key_word/modelling"/>
+        
+        <ex:belongs_to_topic>
+            <rdf:Description>
+                <ex:links_to rdf:resource="http://example.org/Topic/Recrystallization_and_Recovery_in_Steels"/>
+                <ex:has_value></ex:has_value>
+            </rdf:Description>
+        </ex:belongs_to_topic>
+    </rdf:Description>
+
+    <rdf:Description rdf:about="http://example.org/Article/Evaluation_CALPHAD_Model">
+        <rdf:type rdf:resource="http://example.org/Article"/>
+        <ex:name>Evaluation of Computer Model Results for Thermodynamic and Kinetic Calculation of Phase Transformation in a Middle-Carbon Alloyed Steel</ex:name>
+        <ex:description>A study using a CALPHAD-based computer model to predict thermodynamic equilibria and kinetic phase transformations (ferrite, bainite, martensite) in medium-carbon steels, with accurate predictions of cooling rates leading to different phases.</ex:description>
+        
+        <ex:has_author>
+            <rdf:Description>
+                <ex:links_to rdf:resource="http://example.org/Author/V_V_Kaverynsky"/>
+                <ex:has_value></ex:has_value>
+            </rdf:Description>
+        </ex:has_author>
+        
+        <ex:has_author>
+            <rdf:Description>
+                <ex:links_to rdf:resource="http://example.org/Author/Z_P_Sukhenko"/>
+                <ex:has_value></ex:has_value>
+            </rdf:Description>
+        </ex:has_author>
+        
+        <ex:develops_technology>
+            <rdf:Description>
+                <ex:links_to rdf:resource="http://example.org/Technology/Thermodynamic_and_Kinetic_Calculation_Model_CALPHAD-based"/>
+                <ex:has_value></ex:has_value>
+            </rdf:Description>
+        </ex:develops_technology>
+        
+        <ex:studies_process>
+            <rdf:Description>
+                <ex:links_to rdf:resource="http://example.org/Process/Phase_Transformation"/>
+                <ex:has_value></ex:has_value>
+            </rdf:Description>
+        </ex:studies_process>
+        
+        <ex:uses_method>
+            <rdf:Description>
+                <ex:links_to rdf:resource="http://example.org/Research_method/CALPHAD_method"/>
+                <ex:has_value></ex:has_value>
+            </rdf:Description>
+        </ex:uses_method>
+        
+        <ex:includes_terms rdf:resource="http://example.org/Key_word/medium-carbon_steel"/>
+        <ex:includes_terms rdf:resource="http://example.org/Key_word/kinetics"/>
+        <ex:includes_terms rdf:resource="http://example.org/Key_word/CCT_diagram"/>
+        <ex:includes_terms rdf:resource="http://example.org/Key_word/modelling"/>
+        <ex:includes_terms rdf:resource="http://example.org/Key_word/CALPHAD_method"/>
+        
+        <ex:belongs_to_topic>
+            <rdf:Description>
+                <ex:links_to rdf:resource="http://example.org/Topic/Phase_Transformations_in_Steels"/>
+                <ex:has_value></ex:has_value>
+            </rdf:Description>
+        </ex:belongs_to_topic>
+    </rdf:Description>
+
+    <!-- Research_method entries -->
+    <rdf:Description rdf:about="http://example.org/Research_method/Semi-empirical_Modelling">
+        <rdf:type rdf:resource="http://example.org/Research_method"/>
+        <ex:name>Semi-empirical Modelling</ex:name>
+        <ex:description>A research method that combines empirical formulas with theoretical principles to simulate recrystallization and precipitation kinetics in steels.</ex:description>
+    </rdf:Description>
+
+    <rdf:Description rdf:about="http://example.org/Research_method/CALPHAD_method">
+        <rdf:type rdf:resource="http://example.org/Research_method"/>
+        <ex:name>CALPHAD method</ex:name>
+        <ex:description>A computational method for calculating phase diagrams and thermodynamic equilibria in multicomponent systems; used for kinetic and equilibrium estimations in steel transformations.</ex:description>
+    </rdf:Description>
+
+    <!-- Material_property entries -->
+    <rdf:Description rdf:about="http://example.org/Material_property/Grain_size">
+        <rdf:type rdf:resource="http://example.org/Material_property"/>
+        <ex:name>Grain size</ex:name>
+        <ex:description>A property describing the size of the grains in a polycrystalline material, affecting mechanical strength and transformation kinetics.</ex:description>
+    </rdf:Description>
+
+    <rdf:Description rdf:about="http://example.org/Material_property/Dislocation_density">
+        <rdf:type rdf:resource="http://example.org/Material_property"/>
+        <ex:name>Dislocation density</ex:name>
+        <ex:description>A measure of the number of dislocations per unit volume in a material; influences recovery and recrystallization processes.</ex:description>
+    </rdf:Description>
+
+    <!-- Result entries -->
+    <rdf:Description rdf:about="http://example.org/Result/Validation_with_experimental_data">
+        <rdf:type rdf:resource="http://example.org/Result"/>
+        <ex:name>Validation with Experimental Data</ex:name>
+        <ex:description>The computer models in the studies were verified against experimental results, confirming their reliability for practical applications.</ex:description>
+    </rdf:Description>
+
+    <rdf:Description rdf:about="http://example.org/Result/Prediction_of_cooling_rates">
+        <rdf:type rdf:resource="http://example.org/Result"/>
+        <ex:name>Prediction of Cooling Rates</ex:name>
+        <ex:description>The CALPHAD-based model accurately predicts the cooling rates that lead to the formation of martensite, ferrite, and bainite in medium-carbon steels.</ex:description>
+    </rdf:Description>
+
+    <rdf:Description rdf:about="http://example.org/Result/Effect_of_Nb_content">
+        <rdf:type rdf:resource="http://example.org/Result"/>
+        <ex:name>Effect of Nb Content</ex:name>
+        <ex:description>The simulations demonstrate that increasing niobium (Nb) content slows down recrystallization and recovery processes due to enhanced precipitation of carbonitride particles.</ex:description>
+    </rdf:Description>
+
+</rdf:RDF>

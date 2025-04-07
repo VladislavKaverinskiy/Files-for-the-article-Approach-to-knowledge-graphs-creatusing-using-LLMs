@@ -1,0 +1,420 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+         xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+         xmlns:ex="http://example.org/materials#">
+
+    <!-- Key_word entries -->
+    <rdf:Description rdf:about="http://example.org/Key_word/Al-Si_alloys">
+        <rdf:type rdf:resource="http://example.org/Key_word"/>
+        <ex:name>Al-Si Alloys</ex:name>
+        <ex:description>Eutectic aluminum-silicon alloys known for low density, corrosion resistance, and brittleness in cast state</ex:description>
+        <ex:deals_with_material>
+            <rdf:Description>
+                <ex:links_to rdf:resource="http://example.org/Article/About_Al-Si_Alloys_Structure_Features..."/>
+                <ex:has_value>Primary material studied</ex:has_value>
+            </rdf:Description>
+        </ex:deals_with_material>
+        <ex:includes_terms>
+            <rdf:Description>
+                <ex:links_to rdf:resource="http://example.org/Article/About_Al-Si_Alloys_Structure_Features..."/>
+                <ex:has_value>Core subject</ex:has_value>
+            </rdf:Description>
+        </ex:includes_terms>
+    </rdf:Description>
+
+    <rdf:Description rdf:about="http://example.org/Key_word/Deformation_heat_processing">
+        <rdf:type rdf:resource="http://example.org/Key_word"/>
+        <ex:name>Deformation Heat Processing</ex:name>
+        <ex:description>Technique combining hot plastic deformation, intermediate cooling, and annealing to refine microstructure</ex:description>
+        <ex:develops_technology>
+            <rdf:Description>
+                <ex:links_to rdf:resource="http://example.org/Article/About_Al-Si_Alloys_Structure_Features..."/>
+                <ex:has_value>Proposed method</ex:has_value>
+            </rdf:Description>
+        </ex:develops_technology>
+        <ex:includes_terms>
+            <rdf:Description>
+                <ex:links_to rdf:resource="http://example.org/Article/About_Al-Si_Alloys_Structure_Features..."/>
+                <ex:has_value>Core methodology</ex:has_value>
+            </rdf:Description>
+        </ex:includes_terms>
+    </rdf:Description>
+
+    <rdf:Description rdf:about="http://example.org/Key_word/Work_hardening">
+        <rdf:type rdf:resource="http://example.org/Key_word"/>
+        <ex:name>Work Hardening</ex:name>
+        <ex:description>Cold deformation process to enhance strength through dislocation density increase</ex:description>
+        <ex:involve_process>
+            <rdf:Description>
+                <ex:links_to rdf:resource="http://example.org/Technology/Deformation_heat_processing"/>
+                <ex:has_value>Post-treatment step</ex:has_value>
+            </rdf:Description>
+        </ex:involve_process>
+        <ex:includes_terms>
+            <rdf:Description>
+                <ex:links_to rdf:resource="http://example.org/Article/About_Al-Si_Alloys_Structure_Features..."/>
+                <ex:has_value>Strengthening mechanism</ex:has_value>
+            </rdf:Description>
+        </ex:includes_terms>
+    </rdf:Description>
+
+    <!-- Technology entries -->
+    <rdf:Description rdf:about="http://example.org/Technology/Deformation_heat_processing">
+        <rdf:type rdf:resource="http://example.org/Technology"/>
+        <ex:name>Deformation Heat Processing</ex:name>
+        <ex:description>Multi-stage thermo-mechanical treatment with temperature-controlled forging cycles</ex:description>
+        <ex:include_process>
+            <rdf:Description>
+                <ex:links_to rdf:resource="http://example.org/Process/Hot_deformation"/>
+                <ex:has_value>Primary operation</ex:has_value>
+            </rdf:Description>
+        </ex:include_process>
+        <ex:include_process>
+            <rdf:Description>
+                <ex:links_to rdf:resource="http://example.org/Process/Annealing"/>
+                <ex:has_value>Intermediate step</ex:has_value>
+            </rdf:Description>
+        </ex:include_process>
+        <ex:applied_to_material>
+            <rdf:Description>
+                <ex:links_to rdf:resource="http://example.org/Key_word/Al-Si_alloys"/>
+                <ex:has_value>Target material</ex:has_value>
+            </rdf:Description>
+        </ex:applied_to_material>
+        <ex:uses_phenomenon>
+            <rdf:Description>
+                <ex:links_to rdf:resource="http://example.org/Phenomenon/Spheroidization"/>
+                <ex:has_value>Morphology change mechanism</ex:has_value>
+            </rdf:Description>
+        </ex:uses_phenomenon>
+    </rdf:Description>
+
+    <!-- Process entries -->
+    <rdf:Description rdf:about="http://example.org/Process/Hot_deformation">
+        <rdf:type rdf:resource="http://example.org/Process"/>
+        <ex:name>Hot Deformation</ex:name>
+        <ex:description>Plastic forming at 490-540°C with controlled cooling rates</ex:description>
+        <ex:involve_process>
+            <rdf:Description>
+                <ex:links_to rdf:resource="http://example.org/Technology/Deformation_heat_processing"/>
+                <ex:has_value>Key operation</ex:has_value>
+            </rdf:Description>
+        </ex:involve_process>
+        <ex:use_phenomenon>
+            <rdf:Description>
+                <ex:links_to rdf:resource="http://example.org/Phenomenon/Dynamic_recystallization"/>
+                <ex:has_value>Microstructure refinement</ex:has_value>
+            </rdf:Description>
+        </ex:use_phenomenon>
+    </rdf:Description>
+
+    <rdf:Description rdf:about="http://example.org/Process/Annealing">
+        <rdf:type rdf:resource="http://example.org/Process"/>
+        <ex:name>Annealing</ex:name>
+        <ex:description>Short-term heat treatment at 490-540°C for microstructure stabilization</ex:description>
+        <ex:involve_process>
+            <rdf:Description>
+                <ex:links_to rdf:resource="http://example.org/Technology/Deformation_heat_processing"/>
+                <ex:has_value>Intermediate treatment</ex:has_value>
+            </rdf:Description>
+        </ex:involve_process>
+        <ex:use_phenomenon>
+            <rdf:Description>
+                <ex:links_to rdf:resource="http://example.org/Phenomenon/Stress_relief"/>
+                <ex:has_value>Residual stress reduction</ex:has_value>
+            </rdf:Description>
+        </ex:use_phenomenon>
+    </rdf:Description>
+
+    <!-- Phenomenon entries -->
+    <rdf:Description rdf:about="http://example.org/Phenomenon/Spheroidization">
+        <rdf:type rdf:resource="http://example.org/Phenomenon"/>
+        <ex:name>Spheroidization</ex:name>
+        <ex:description>Transformation of silicon inclusions into spherical shapes through thermal-mechanical treatment</ex:description>
+        <ex:use_phenomenon>
+            <rdf:Description>
+                <ex:links_to rdf:resource="http://example.org/Technology/Deformation_heat_processing"/>
+                <ex:has_value>Morphology control</ex:has_value>
+            </rdf:Description>
+        </ex:use_phenomenon>
+        <ex:studies_process>
+            <rdf:Description>
+                <ex:links_to rdf:resource="http://example.org/Article/About_Al-Si_Alloys_Structure_Features..."/>
+                <ex:has_value>Microstructural evolution</ex:has_value>
+            </rdf:Description>
+        </ex:studies_process>
+    </rdf:Description>
+
+    <rdf:Description rdf:about="http://example.org/Phenomenon/Dynamic_recystallization">
+        <rdf:type rdf:resource="http://example.org/Phenomenon"/>
+        <ex:name>Dynamic Recrystallization</ex:name>
+        <ex:description>Formation of new grains during high-temperature deformation</ex:description>
+        <ex:use_phenomenon>
+            <rdf:Description>
+                <ex:links_to rdf:resource="http://example.org/Process/Hot_deformation"/>
+                <ex:has_value>Grain refinement mechanism</ex:has_value>
+            </rdf:Description>
+        </ex:use_phenomenon>
+    </rdf:Description>
+
+    <!-- Equipment entries -->
+    <rdf:Description rdf:about="http://example.org/Equipment/Forging_machine">
+        <rdf:type rdf:resource="http://example.org/Equipment"/>
+        <ex:name>Forging Machine</ex:name>
+        <ex:description>Mechanical press for applying controlled plastic deformation</ex:description>
+        <ex:utilizes_equipment>
+            <rdf:Description>
+                <ex:links_to rdf:resource="http://example.org/Technology/Deformation_heat_processing"/>
+                <ex:has_value>Primary deformation tool</ex:has_value>
+            </rdf:Description>
+        </ex:utilizes_equipment>
+    </rdf:Description>
+
+    <rdf:Description rdf:about="http://example.org/Equipment/Optical_microscope">
+        <rdf:type rdf:resource="http://example.org/Equipment"/>
+        <ex:name>Optical Microscope</ex:name>
+        <ex:description>Instrument for observing microstructural features at 40-1000× magnification</ex:description>
+        <ex:utilizes_equipment>
+            <rdf:Description>
+                <ex:links_to rdf:resource="http://example.org/Research_method/Microstructure_analysis"/>
+                <ex:has_value>Characterization tool</ex:has_value>
+            </rdf:Description>
+        </ex:utilizes_equipment>
+    </rdf:Description>
+
+    <rdf:Description rdf:about="http://example.org/Equipment/Tensile_tester">
+        <rdf:type rdf:resource="http://example.org/Equipment"/>
+        <ex:name>Tensile Tester</ex:name>
+        <ex:description>Testing machine</ex:description>
+    </rdf:Description>
+
+    <!-- Topic entries -->
+    <rdf:Description rdf:about="http://example.org/Topic/Material_Science">
+        <rdf:type rdf:resource="http://example.org/Topic"/>
+        <ex:name>Material Science</ex:name>
+        <ex:description>Study of material properties and processing techniques</ex:description>
+        <ex:belongs_to_topic>
+            <rdf:Description>
+                <ex:links_to rdf:resource="http://example.org/Article/About_Al-Si_Alloys_Structure_Features..."/>
+                <ex:has_value>Primary domain</ex:has_value>
+            </rdf:Description>
+        </ex:belongs_to_topic>
+        <ex:belongs_to_topic>
+            <rdf:Description>
+                <ex:links_to rdf:resource="http://example.org/Technology/Deformation_heat_processing"/>
+                <ex:has_value>Application field</ex:has_value>
+            </rdf:Description>
+        </ex:belongs_to_topic>
+    </rdf:Description>
+
+    <rdf:Description rdf:about="http://example.org/Topic/Physics_of_Strength">
+        <rdf:type rdf:resource="http://example.org/Topic"/>
+        <ex:name>Physics of Strength</ex:name>
+        <ex:description>Mechanical behavior analysis of materials under stress</ex:description>
+        <ex:belongs_to_topic>
+            <rdf:Description>
+                <ex:links_to rdf:resource="http://example.org/Article/About_Al-Si_Alloys_Structure_Features..."/>
+                <ex:has_value>Secondary domain</ex:has_value>
+            </rdf:Description>
+        </ex:belongs_to_topic>
+    </rdf:Description>
+
+    <!-- Organization entry -->
+    <rdf:Description rdf:about="http://example.org/Organization/I.M._Frantsevich_Institute">
+        <rdf:type rdf:resource="http://example.org/Organization"/>
+        <ex:name>I. M. Frantsevich Institute for Problems in Materials Science</ex:name>
+        <ex:description>Ukrainian research institution specializing in materials science</ex:description>
+        <ex:works_in>
+            <rdf:Description>
+                <ex:links_to rdf:resource="http://example.org/Author/Vladyslav_Kaverinsky"/>
+                <ex:has_value>Affiliation</ex:has_value>
+            </rdf:Description>
+        </ex:works_in>
+        <ex:works_in>
+            <rdf:Description>
+                <ex:links_to rdf:resource="http://example.org/Author/Z._P._Sukhenko"/>
+                <ex:has_value>Affiliation</ex:has_value>
+            </rdf:Description>
+        </ex:works_in>
+    </rdf:Description>
+
+    <!-- Author entry -->
+    <rdf:Description rdf:about="http://example.org/Author/Vladyslav_Kaverinsky">
+        <rdf:type rdf:resource="http://example.org/Author"/>
+        <ex:name>V. V. Kaverinsky</ex:name>
+        <ex:description>Researcher specializing in aluminum alloy processing</ex:description>
+        <ex:has_author>
+            <rdf:Description>
+                <ex:links_to rdf:resource="http://example.org/Article/About_Al-Si_Alloys_Structure_Features..."/>
+                <ex:has_value>Corresponding author</ex:has_value>
+            </rdf:Description>
+        </ex:has_author>
+        <ex:works_in>
+            <rdf:Description>
+                <ex:links_to rdf:resource="http://example.org/Organization/I.M._Frantsevich_Institute"/>
+                <ex:has_value>Employment</ex:has_value>
+            </rdf:Description>
+        </ex:works_in>
+    </rdf:Description>
+
+    <!-- Article entry -->
+    <rdf:Description rdf:about="http://example.org/Article/About_Al-Si_Alloys_Structure_Features...">
+        <rdf:type rdf:resource="http://example.org/Article"/>
+        <ex:name>About Al–Si Alloys Structure Features and Ductility and Strength Increasing After Deformation Heat Processing</ex:name>
+        <ex:description>Study on thermo-mechanical processing effects on Al-Si alloy properties</ex:description>
+        <ex:deals_with_material>
+            <rdf:Description>
+                <ex:links_to rdf:resource="http://example.org/Key_word/Al-Si_alloys"/>
+                <ex:has_value>Primary focus</ex:has_value>
+            </rdf:Description>
+        </ex:deals_with_material>
+        <ex:studies_property>
+            <rdf:Description>
+                <ex:links_to rdf:resource="http://example.org/Material_property/Ductility"/>
+                <ex:has_value>Increased from ~1% to 22.57%</ex:has_value>
+            </rdf:Description>
+        </ex:studies_property>
+        <ex:studies_property>
+            <rdf:Description>
+                <ex:links_to rdf:resource="http://example.org/Material_property/Tensile_strength"/>
+                <ex:has_value>Up to 333.3 MPa</ex:has_value>
+            </rdf:Description>
+        </ex:studies_property>
+        <ex:uses_method>
+            <rdf:Description>
+                <ex:links_to rdf:resource="http://example.org/Research_method/Tensile_testing"/>
+                <ex:has_value>Mechanical property evaluation</ex:has_value>
+            </rdf:Description>
+        </ex:uses_method>
+        <ex:uses_method>
+            <rdf:Description>
+                <ex:links_to rdf:resource="http://example.org/Research_method/Microstructure_analysis"/>
+                <ex:has_value>Inclusion morphology study</ex:has_value>
+            </rdf:Description>
+        </ex:uses_method>
+        <ex:has_results>
+            <rdf:Description>
+                <ex:links_to rdf:resource="http://example.org/Result/Strength_increase"/>
+                <ex:has_value>15-75% improvement</ex:has_value>
+            </rdf:Description>
+        </ex:has_results>
+        <ex:has_results>
+            <rdf:Description>
+                <ex:links_to rdf:resource="http://example.org/Result/Silicon_refinement"/>
+                <ex:has_value>Inclusions reduced to 5-10 µm</ex:has_value>
+            </rdf:Description>
+        </ex:has_results>
+    </rdf:Description>
+
+    <!-- Research_method entries -->
+    <rdf:Description rdf:about="http://example.org/Research_method/Tensile_testing">
+        <rdf:type rdf:resource="http://example.org/Research_method"/>
+        <ex:name>Tensile Testing</ex:name>
+        <ex:description>Mechanical testing method to evaluate strength and ductility</ex:description>
+        <ex:studies_property>
+            <rdf:Description>
+                <ex:links_to rdf:resource="http://example.org/Material_property/Ultimate_tensile_strength"/>
+                <ex:has_value>Measured parameter</ex:has_value>
+            </rdf:Description>
+        </ex:studies_property>
+        <ex:studies_property>
+            <rdf:Description>
+                <ex:links_to rdf:resource="http://example.org/Material_property/Elongation"/>
+                <ex:has_value>Measured parameter</ex:has_value>
+            </rdf:Description>
+        </ex:studies_property>
+        <ex:utilizes_equipment>
+            <rdf:Description>
+                <ex:links_to rdf:resource="http://example.org/Equipment/Tensile_tester"/>
+                <ex:has_value>Testing machine</ex:has_value>
+            </rdf:Description>
+        </ex:utilizes_equipment>
+    </rdf:Description>
+
+    <rdf:Description rdf:about="http://example.org/Research_method/Microstructure_analysis">
+        <rdf:type rdf:resource="http://example.org/Research_method"/>
+        <ex:name>Microstructure Analysis</ex:name>
+        <ex:description>Metallographic examination of alloy microstructure</ex:description>
+        <ex:studies_property>
+            <rdf:Description>
+                <ex:links_to rdf:resource="http://example.org/Material_property/Inclusion_morphology"/>
+                <ex:has_value>Silicon shape analysis</ex:has_value>
+            </rdf:Description>
+        </ex:studies_property>
+        <ex:utilizes_equipment>
+            <rdf:Description>
+                <ex:links_to rdf:resource="http://example.org/Equipment/Optical_microscope"/>
+                <ex:has_value>Primary tool</ex:has_value>
+            </rdf:Description>
+        </ex:utilizes_equipment>
+    </rdf:Description>
+
+    <!-- Material_property entries -->
+    <rdf:Description rdf:about="http://example.org/Material_property/Ductility">
+        <rdf:type rdf:resource="http://example.org/Material_property"/>
+        <ex:name>Ductility</ex:name>
+        <ex:description>Ability to undergo plastic deformation before fracture</ex:description>
+        <ex:studies_property>
+            <rdf:Description>
+                <ex:links_to rdf:resource="http://example.org/Article/About_Al-Si_Alloys_Structure_Features..."/>
+                <ex:has_value>Key improvement metric</ex:has_value>
+            </rdf:Description>
+        </ex:studies_property>
+        <ex:has_results>
+            <rdf:Description>
+                <ex:links_to rdf:resource="http://example.org/Result/Ductility_enhancement"/>
+                <ex:has_value>Up to 22.57% elongation</ex:has_value>
+            </rdf:Description>
+        </ex:has_results>
+    </rdf:Description>
+
+    <rdf:Description rdf:about="http://example.org/Material_property/Tensile_strength">
+        <rdf:type rdf:resource="http://example.org/Material_property"/>
+        <ex:name>Tensile Strength</ex:name>
+        <ex:description>Maximum stress a material can withstand while being stretched</ex:description>
+        <ex:studies_property>
+            <rdf:Description>
+                <ex:links_to rdf:resource="http://example.org/Article/About_Al-Si_Alloys_Structure_Features..."/>
+                <ex:has_value>Primary strength metric</ex:has_value>
+            </rdf:Description>
+        </ex:studies_property>
+        <ex:has_results>
+            <rdf:Description>
+                <ex:links_to rdf:resource="http://example.org/Result/Strength_increase"/>
+                <ex:has_value>Up to 333.3 MPa</ex:has_value>
+            </rdf:Description>
+        </ex:has_results>
+    </rdf:Description>
+
+    <rdf:Description rdf:about="http://example.org/Material_property/Inclusion_morphology">
+        <rdf:type rdf:resource="http://example.org/Material_property"/>
+        <ex:name>Inclusion Morphology</ex:name>
+        <ex:description>Silicon shape analysis</ex:description>
+    </rdf:Description>
+
+    <!-- Result entries -->
+    <rdf:Description rdf:about="http://example.org/Result/Strength_increase">
+        <rdf:type rdf:resource="http://example.org/Result"/>
+        <ex:name>Strength Increase</ex:name>
+        <ex:description>15-75% improvement in ultimate tensile strength through processing</ex:description>
+        <ex:has_results>
+            <rdf:Description>
+                <ex:links_to rdf:resource="http://example.org/Article/About_Al-Si_Alloys_Structure_Features..."/>
+                <ex:has_value>Primary outcome</ex:has_value>
+            </rdf:Description>
+        </ex:has_results>
+    </rdf:Description>
+
+    <rdf:Description rdf:about="http://example.org/Result/Silicon_refinement">
+        <rdf:type rdf:resource="http://example.org/Result"/>
+        <ex:name>Silicon Refinement</ex:name>
+        <ex:description>Reduction of silicon inclusions to 5-10 µm spherical particles</ex:description>
+        <ex:has_results>
+            <rdf:Description>
+                <ex:links_to rdf:resource="http://example.org/Article/About_Al-Si_Alloys_Structure_Features..."/>
+                <ex:has_value>Microstructural outcome</ex:has_value>
+            </rdf:Description>
+        </ex:has_results>
+    </rdf:Description>
+
+</rdf:RDF>

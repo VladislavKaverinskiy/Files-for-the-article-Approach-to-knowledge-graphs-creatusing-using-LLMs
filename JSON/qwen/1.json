@@ -1,0 +1,249 @@
+{
+  "Term": {
+    "Term_1": {
+      "links": {
+        "has_word": [
+          {"to": "Word_1", "value": "Austenite decomposition"},
+          {"to": "Word_2", "value": "Phase transformations"}
+        ]
+      },
+      "name": "Austenite decomposition",
+      "description": "Process of austenite breakdown into ferrite, pearlite, bainite, or martensite in steels [[1]]"
+    },
+    "Term_2": {
+      "links": {
+        "has_word": [
+          {"to": "Word_3", "value": "CALPHAD"},
+          {"to": "Word_4", "value": "Diffusion coefficient"}
+        ]
+      },
+      "name": "CALPHAD method",
+      "description": "Thermodynamic modeling approach for phase equilibrium calculations [[5]]"
+    },
+    "Term_3": {
+      "links": {
+        "has_word": [
+          {"to": "Word_5", "value": "Martensitic transformation"}
+        ]
+      },
+      "name": "Martensitic transformation",
+      "description": "Diffusionless phase transition forming martensite in steels [[18]]"
+    }
+  },
+  "Word": {
+    "Word_1": {"name": "Austenite"},
+    "Word_2": {"name": "Decomposition"},
+    "Word_3": {"name": "CALPHAD"},
+    "Word_4": {"name": "Diffusion"},
+    "Word_5": {"name": "Martensitic"}
+  },
+  "Material_type": {
+    "Material_1": {
+      "links": {
+        "has_property": [
+          {"to": "Material_property_1", "value": "Carbon concentration"},
+          {"to": "Material_property_2", "value": "Grain size"}
+        ]
+      },
+      "name": "Alloyed steels",
+      "description": "Steels with Mn, Cr, Ni, Mo, and Cu additions studied in the article [[1]]"
+    },
+    "Material_2": {
+      "name": "Austenite",
+      "description": "High-temperature phase in steels undergoing decomposition [[1]]"
+    },
+    "Material_3": {
+      "name": "Ferrite",
+      "description": "Body-centered cubic iron phase formed during cooling [[1]]"
+    },
+    "Material_4": {
+      "name": "Pearlite",
+      "description": "Lamellar structure of ferrite and cementite [[9]]"
+    },
+    "Material_5": {
+      "name": "Bainite",
+      "description": "Acicular microstructure formed via shear transformation [[17]]"
+    },
+    "Material_6": {
+      "name": "Martensite",
+      "description": "Hard phase formed via diffusionless transformation [[20]]"
+    }
+  },
+  "Technology": {
+    "Technology_1": {
+      "links": {
+        "include_process": [
+          {"to": "Process_1"},
+          {"to": "Process_2"},
+          {"to": "Process_3"},
+          {"to": "Process_4"}
+        ]
+      },
+      "name": "Mathematical modeling",
+      "description": "Computational approach to simulate phase transformations [[1]]"
+    }
+  },
+  "Process": {
+    "Process_1": {
+      "links": {
+        "use_phenomenon": [
+          {"to": "Phenomenon_1"}
+        ]
+      },
+      "name": "Ferrite transformation",
+      "description": "Diffusion-controlled formation of ferrite from austenite [[2]]"
+    },
+    "Process_2": {
+      "name": "Pearlite transformation",
+      "description": "Cooperative growth of ferrite and cementite lamellae [[9]]"
+    },
+    "Process_3": {
+      "name": "Bainite transformation",
+      "description": "Shear-based formation of acicular ferrite and carbides [[17]]"
+    },
+    "Process_4": {
+      "name": "Martensitic transformation",
+      "description": "Athermal formation of martensite below Mₛ temperature [[20]]"
+    }
+  },
+  "Phenomenon": {
+    "Phenomenon_1": {
+      "name": "Diffusion-controlled growth",
+      "description": "Atomic migration-driven phase boundary movement [[3]]"
+    },
+    "Phenomenon_2": {
+      "name": "Phase equilibrium",
+      "description": "Thermodynamic state with minimal Gibbs energy [[5]]"
+    }
+  },
+  "Equipment": {
+    "Equipment_1": {
+      "name": "Computer program",
+      "description": "C++ software implementing the mathematical model [[4]]"
+    }
+  },
+  "Topic": {
+    "Topic_1": {
+      "name": "Materials Science",
+      "description": "Study of phase transformations and microstructure evolution [[1]]"
+    },
+    "Topic_2": {
+      "name": "Metallurgy",
+      "description": "Application of thermodynamics and kinetics to steel processing [[2]]"
+    }
+  },
+  "Organization": {
+    "Organization_1": {
+      "name": "I. M. Frantsevich Institute for Problems in Materials Science",
+      "description": "Research institution affiliated with the National Academy of Sciences of Ukraine [[1]]"
+    }
+  },
+  "Author": {
+    "Author_1": {
+      "links": {
+        "works_in": [
+          {"to": "Organization_1"}
+        ]
+      },
+      "name": "V. V. Kaverinsky",
+      "description": "Lead author of the austenite decomposition modeling study [[1]]"
+    },
+    "Author_2": {
+      "links": {
+        "works_in": [
+          {"to": "Organization_1"}
+        ]
+      },
+      "name": "A. I. Trotsan",
+      "description": "Co-author specializing in phase transformation modeling [[1]]"
+    },
+    "Author_3": {
+      "links": {
+        "works_in": [
+          {"to": "Organization_1"}
+        ]
+      },
+      "name": "Z. P. Sukhenko",
+      "description": "Researcher contributing to thermodynamic calculations [[1]]"
+    }
+  },
+  "Article": {
+    "Article_1": {
+      "links": {
+        "has_author": [
+          {"to": "Author_1"},
+          {"to": "Author_2"},
+          {"to": "Author_3"}
+        ],
+        "deals_with_material": [
+          {"to": "Material_1"}
+        ],
+        "studies_property": [
+          {"to": "Material_property_1"},
+          {"to": "Material_property_3"}
+        ],
+        "develops_technology": [
+          {"to": "Technology_1"}
+        ],
+        "belongs_to_topic": [
+          {"to": "Topic_1"},
+          {"to": "Topic_2"}
+        ],
+        "includes_terms": [
+          {"to": "Term_1"},
+          {"to": "Term_2"},
+          {"to": "Term_3"}
+        ],
+        "utilizes_equipment": [
+          {"to": "Equipment_1"}
+        ]
+      },
+      "name": "Mathematical Modelling of Kinetics of Decomposition of the Supercooled Austenite in Alloyed Steels",
+      "description": "2017 study on phase transformation modeling in alloyed steels [[1]]"
+    }
+  },
+  "Research_method": {
+    "Research_method_1": {
+      "links": {
+        "uses_method": [
+          {"to": "Term_2"}
+        ]
+      },
+      "name": "CALPHAD modeling",
+      "description": "Thermodynamic calculation method for phase equilibria [[5]]"
+    },
+    "Research_method_2": {
+      "name": "Kinetic simulation",
+      "description": "Time-dependent modeling of phase transformation rates [[1]]"
+    }
+  },
+  "Material_property": {
+    "Material_property_1": {
+      "name": "Carbon concentration",
+      "description": "Key factor influencing phase transformation kinetics [[6]]"
+    },
+    "Material_property_2": {
+      "name": "Grain size",
+      "description": "Austenite grain size (40-45 μm) affecting nucleation sites [[1]]"
+    },
+    "Material_property_3": {
+      "name": "Diffusion coefficient",
+      "description": "Quantifies carbon mobility in austenite (10⁻¹²–10⁻¹⁰ m²/s) [[14]]"
+    }
+  },
+  "Result": {
+    "Result_1": {
+      "links": {
+        "is_explained_by_phenomenon": [
+          {"to": "Phenomenon_2"}
+        ]
+      },
+      "name": "Phase transformation kinetics",
+      "description": "Predicted microstructure evolution under different cooling rates [[1]]"
+    },
+    "Result_2": {
+      "name": "Martensite formation",
+      "description": "Occurs below 470°C in 0.2% C steel at 100°C/s cooling rate [[1]]"
+    }
+  }
+}

@@ -1,0 +1,438 @@
+{
+  "Key word": {
+    "phase diagrams": {
+      "links": {},
+      "name": "Phase Diagrams",
+      "description": "Scientific representations of equilibrium between phases in materials; used as a key term in the austenite decomposition study."
+    },
+    "kinetics": {
+      "links": {},
+      "name": "Kinetics",
+      "description": "The study of transformation rates; featured in all three articles addressing phase change speeds."
+    },
+    "austenite": {
+      "links": {},
+      "name": "Austenite",
+      "description": "A high-temperature phase of steel that transforms into various phases upon cooling; central to the studies."
+    },
+    "steel": {
+      "links": {},
+      "name": "Steel",
+      "description": "An alloy of iron and carbon; the primary material investigated in the articles."
+    },
+    "modelling": {
+      "links": {},
+      "name": "Modelling",
+      "description": "The process of simulating physical phenomena using mathematical models; a key approach in the studies."
+    },
+    "recrystallization": {
+      "links": {},
+      "name": "Recrystallization",
+      "description": "A process that reduces dislocation density in deformed metals; the focus of the second article."
+    },
+    "carbonitride": {
+      "links": {},
+      "name": "Carbonitride",
+      "description": "Compounds precipitated in steels influencing recovery and recrystallization; discussed in the recrystallization study."
+    },
+    "CCT diagram": {
+      "links": {},
+      "name": "CCT Diagram",
+      "description": "Continuous cooling transformation diagram; mentioned in the evaluation of phase transformation in medium‐carbon steel."
+    },
+    "medium-carbon steel": {
+      "links": {},
+      "name": "Medium-Carbon Steel",
+      "description": "Steel with intermediate carbon content; studied in the thermodynamic and kinetic calculation article."
+    }
+  },
+  "Technology": {
+    "Mathematical Model (C++)": {
+      "links": {
+        "include process": [
+          {
+            "to": "Austenite Decomposition",
+            "value": ""
+          }
+        ]
+      },
+      "name": "Mathematical Model (C++)",
+      "description": "A computer-based mathematical model implemented in C++ for simulating the kinetics of phase transformations (ferrite, pearlite, bainite, martensite) in alloyed steels."
+    },
+    "Recrystallization Modelling Technology (Python)": {
+      "links": {
+        "include process": [
+          {
+            "to": "Recrystallization",
+            "value": ""
+          },
+          {
+            "to": "Carbonitride Precipitation",
+            "value": ""
+          }
+        ]
+      },
+      "name": "Recrystallization Modelling Technology (Python)",
+      "description": "A semi-empirical computer modelling approach implemented in Python for simulating recrystallization kinetics and carbonitride particle precipitation in deformed austenite."
+    },
+    "Thermodynamic and Kinetic Calculation Model (CALPHAD-based)": {
+      "links": {
+        "include process": [
+          {
+            "to": "Phase Transformation",
+            "value": ""
+          }
+        ]
+      },
+      "name": "Thermodynamic and Kinetic Calculation Model (CALPHAD-based)",
+      "description": "A computer model based on the CALPHAD method for calculating thermodynamic equilibria and kinetic phase transformations in medium‐carbon alloyed steels."
+    }
+  },
+  "Process": {
+    "Austenite Decomposition": {
+      "links": {
+        "use phenomenon": [
+          {
+            "to": "Phase Transformation Kinetics",
+            "value": ""
+          }
+        ]
+      },
+      "name": "Austenite Decomposition",
+      "description": "The transformation of supercooled austenite into phases such as ferrite, pearlite, bainite, and martensite; modeled and validated in the first article."
+    },
+    "Recrystallization": {
+      "links": {},
+      "name": "Recrystallization",
+      "description": "The process of new grain formation in deformed metals, reducing dislocation density; simulated in the second article."
+    },
+    "Carbonitride Precipitation": {
+      "links": {},
+      "name": "Carbonitride Precipitation",
+      "description": "The nucleation and growth of carbonitride particles in deformed austenite, affecting recovery and recrystallization; a key process in the second study."
+    },
+    "Phase Transformation": {
+      "links": {},
+      "name": "Phase Transformation",
+      "description": "The change in phase composition (e.g., formation of ferrite, bainite, martensite) during cooling or isothermal processes; addressed in the third article."
+    }
+  },
+  "Phenomenon": {
+    "Ostwald Ripening": {
+      "links": {},
+      "name": "Ostwald Ripening",
+      "description": "A phenomenon where larger particles grow at the expense of smaller ones due to differences in solubility; mentioned in the context of carbonitride particle evolution."
+    }
+  },
+  "Equipment": {},
+  "Topic": {
+    "Phase Transformations in Steels": {
+      "links": {
+        "belongs to topic": [
+          {
+            "to": "Austenite Decomposition",
+            "value": ""
+          },
+          {
+            "to": "Phase Transformation",
+            "value": ""
+          }
+        ]
+      },
+      "name": "Phase Transformations in Steels",
+      "description": "A subject area focusing on the changes in phase compositions in steels under various thermal and mechanical conditions."
+    },
+    "Recrystallization and Recovery in Steels": {
+      "links": {
+        "belongs to topic": [
+          {
+            "to": "Recrystallization",
+            "value": ""
+          },
+          {
+            "to": "Carbonitride Precipitation",
+            "value": ""
+          }
+        ]
+      },
+      "name": "Recrystallization and Recovery in Steels",
+      "description": "A research area that deals with the processes of recrystallization and recovery in deformed steels, influenced by precipitated phases."
+    }
+  },
+  "Organization": {
+    "I. M. Frantsevich Institute for Problems in Materials Science, N.A.S. of Ukraine": {
+      "links": {},
+      "name": "I. M. Frantsevich Institute for Problems in Materials Science",
+      "description": "A research institute located in Kyiv, Ukraine, where the studies on phase transformations and recrystallization were conducted."
+    }
+  },
+  "Author": {
+    "V. V. Kaverynsky": {
+      "links": {
+        "works in": [
+          {
+            "to": "I. M. Frantsevich Institute for Problems in Materials Science, N.A.S. of Ukraine",
+            "value": ""
+          }
+        ]
+      },
+      "name": "V. V. Kaverynsky",
+      "description": "Co-author of studies on austenite decomposition, phase transformation kinetics, and thermodynamic modelling in steels."
+    },
+    "A. I. Trotsan": {
+      "links": {
+        "works in": [
+          {
+            "to": "I. M. Frantsevich Institute for Problems in Materials Science, N.A.S. of Ukraine",
+            "value": ""
+          }
+        ]
+      },
+      "name": "A. I. Trotsan",
+      "description": "Co-author of the study on the kinetics of decomposition of supercooled austenite in alloyed steels."
+    },
+    "Z. P. Sukhenko": {
+      "links": {
+        "works in": [
+          {
+            "to": "I. M. Frantsevich Institute for Problems in Materials Science, N.A.S. of Ukraine",
+            "value": ""
+          }
+        ]
+      },
+      "name": "Z. P. Sukhenko",
+      "description": "Co-author involved in all three studies addressing phase transformations, recrystallization, and thermodynamic modelling in steels."
+    }
+  },
+  "Article": {
+    "Mathematical Modelling of Kinetics of Decomposition of the Supercooled Austenite in Alloyed Steels": {
+      "links": {
+        "has author": [
+          {
+            "to": "V. V. Kaverynsky",
+            "value": ""
+          },
+          {
+            "to": "A. I. Trotsan",
+            "value": ""
+          },
+          {
+            "to": "Z. P. Sukhenko",
+            "value": ""
+          }
+        ],
+        "develops technology": [
+          {
+            "to": "Mathematical Model (C++)",
+            "value": ""
+          }
+        ],
+        "studies process": [
+          {
+            "to": "Austenite Decomposition",
+            "value": ""
+          }
+        ],
+        "includes terms": [
+          {
+            "to": "phase diagrams",
+            "value": ""
+          },
+          {
+            "to": "kinetics",
+            "value": ""
+          },
+          {
+            "to": "austenite",
+            "value": ""
+          },
+          {
+            "to": "steel",
+            "value": ""
+          },
+          {
+            "to": "modelling",
+            "value": ""
+          }
+        ],
+        "belongs to topic": [
+          {
+            "to": "Phase Transformations in Steels",
+            "value": ""
+          }
+        ]
+      },
+      "name": "Mathematical Modelling of Kinetics of Decomposition of the Supercooled Austenite in Alloyed Steels",
+      "description": "A study presenting a C++-based mathematical model for simulating the thermodynamics and kinetics of phase transformations (including ferrite, pearlite, bainite, and martensite formation) in alloyed steels; validated with experimental data."
+    },
+    "Mathematical Modelling of Primary Recrystallization Kinetics and Precipitation of Carbonitride Particles in Steels. II. Recrystallization Kinetics": {
+      "links": {
+        "has author": [
+          {
+            "to": "V. V. Kaverinsky",
+            "value": ""
+          },
+          {
+            "to": "Z. P. Sukhenko",
+            "value": ""
+          }
+        ],
+        "develops technology": [
+          {
+            "to": "Recrystallization Modelling Technology (Python)",
+            "value": ""
+          }
+        ],
+        "studies process": [
+          {
+            "to": "Recrystallization",
+            "value": ""
+          },
+          {
+            "to": "Carbonitride Precipitation",
+            "value": ""
+          }
+        ],
+        "uses method": [
+          {
+            "to": "Semi-empirical Modelling",
+            "value": ""
+          }
+        ],
+        "includes terms": [
+          {
+            "to": "recrystallization",
+            "value": ""
+          },
+          {
+            "to": "kinetics",
+            "value": ""
+          },
+          {
+            "to": "austenite",
+            "value": ""
+          },
+          {
+            "to": "steel",
+            "value": ""
+          },
+          {
+            "to": "modelling",
+            "value": ""
+          }
+        ],
+        "belongs to topic": [
+          {
+            "to": "Recrystallization and Recovery in Steels",
+            "value": ""
+          }
+        ]
+      },
+      "name": "Mathematical Modelling of Primary Recrystallization Kinetics and Precipitation of Carbonitride Particles in Steels. II. Recrystallization Kinetics",
+      "description": "A study employing a Python-based semi-empirical model to simulate recrystallization kinetics and carbonitride particle precipitation in deformed austenite, demonstrating the effect of Nb content on the slowing of recrystallization and recovery."
+    },
+    "Evaluation of Computer Model Results for Thermodynamic and Kinetic Calculation of Phase Transformation in a Middle-Carbon Alloyed Steel": {
+      "links": {
+        "has author": [
+          {
+            "to": "V. V. Kaverynsky",
+            "value": ""
+          },
+          {
+            "to": "Z. P. Sukhenko",
+            "value": ""
+          }
+        ],
+        "develops technology": [
+          {
+            "to": "Thermodynamic and Kinetic Calculation Model (CALPHAD-based)",
+            "value": ""
+          }
+        ],
+        "studies process": [
+          {
+            "to": "Phase Transformation",
+            "value": ""
+          }
+        ],
+        "uses method": [
+          {
+            "to": "CALPHAD method",
+            "value": ""
+          }
+        ],
+        "includes terms": [
+          {
+            "to": "medium-carbon steel",
+            "value": ""
+          },
+          {
+            "to": "kinetics of phase transformations",
+            "value": ""
+          },
+          {
+            "to": "CCT diagram",
+            "value": ""
+          },
+          {
+            "to": "mathematical model",
+            "value": ""
+          },
+          {
+            "to": "CALPHAD",
+            "value": ""
+          }
+        ],
+        "belongs to topic": [
+          {
+            "to": "Phase Transformations in Steels",
+            "value": ""
+          }
+        ]
+      },
+      "name": "Evaluation of Computer Model Results for Thermodynamic and Kinetic Calculation of Phase Transformation in a Middle-Carbon Alloyed Steel",
+      "description": "A study using a CALPHAD-based computer model to predict thermodynamic equilibria and kinetic phase transformations (ferrite, bainite, martensite) in medium-carbon steels, with accurate predictions of cooling rates leading to different phases."
+    }
+  },
+  "Research method": {
+    "Semi-empirical Modelling": {
+      "links": {},
+      "name": "Semi-empirical Modelling",
+      "description": "A research method that combines empirical formulas with theoretical principles to simulate recrystallization and precipitation kinetics in steels."
+    },
+    "CALPHAD method": {
+      "links": {},
+      "name": "CALPHAD method",
+      "description": "A computational method for calculating phase diagrams and thermodynamic equilibria in multicomponent systems; used for kinetic and equilibrium estimations in steel transformations."
+    }
+  },
+  "Material property": {
+    "Grain size": {
+      "links": {},
+      "name": "Grain size",
+      "description": "A property describing the size of the grains in a polycrystalline material, affecting mechanical strength and transformation kinetics."
+    },
+    "Dislocation density": {
+      "links": {},
+      "name": "Dislocation density",
+      "description": "A measure of the number of dislocations per unit volume in a material; influences recovery and recrystallization processes."
+    }
+  },
+  "Result": {
+    "Validation with experimental data": {
+      "links": {},
+      "name": "Validation with Experimental Data",
+      "description": "The computer models in the studies were verified against experimental results, confirming their reliability for practical applications."
+    },
+    "Prediction of cooling rates": {
+      "links": {},
+      "name": "Prediction of Cooling Rates",
+      "description": "The CALPHAD-based model accurately predicts the cooling rates that lead to the formation of martensite, ferrite, and bainite in medium-carbon steels."
+    },
+    "Effect of Nb content": {
+      "links": {},
+      "name": "Effect of Nb Content",
+      "description": "The simulations demonstrate that increasing niobium (Nb) content slows down recrystallization and recovery processes due to enhanced precipitation of carbonitride particles."
+    }
+  }
+}

@@ -1,0 +1,1724 @@
+{
+    "Class_1": {
+        "Term_1": {
+            "links": {
+                "has word": [
+                    {
+                        "to": "Word_1",
+                        "value": ""
+                    },
+                    {
+                        "to": "Word_2",
+                        "value": ""
+                    }
+                ],
+                "belongs to topic": [
+                    {
+                        "to": "Topic_1",
+                        "value": ""
+                    }
+                ]
+            },
+            "ID": 1,
+            "name": "Карбонитридная преципитация",
+            "description": "Процесс выделения карбонитридных частиц из пересыщенного твердого раствора"
+        },
+        "Term_2": {
+            "links": {
+                "has word": [
+                    {
+                        "to": "Word_3",
+                        "value": ""
+                    }
+                ],
+                "belongs to topic": [
+                    {
+                        "to": "Topic_1",
+                        "value": ""
+                    }
+                ]
+            },
+            "ID": 2,
+            "name": "Рекристаллизация",
+            "description": "Процесс образования новых зерен в деформированном материале"
+        },
+        "Term_3": {
+            "links": {
+                "has word": [
+                    {
+                        "to": "Word_4",
+                        "value": ""
+                    }
+                ],
+                "belongs to topic": [
+                    {
+                        "to": "Topic_1",
+                        "value": ""
+                    }
+                ]
+            },
+            "ID": 3,
+            "name": "Остwaldovo созревание",
+            "description": "Стадия роста частиц за счет растворения мелких и роста крупных"
+        },
+        "Term_4": {
+            "links": {
+                "has word": [
+                    {
+                        "to": "Word_8",
+                        "value": ""
+                    },
+                    {
+                        "to": "Word_9",
+                        "value": ""
+                    }
+                ],
+                "belongs to topic": [
+                    {
+                        "to": "Topic_2",
+                        "value": ""
+                    }
+                ]
+            },
+            "ID": 36,
+            "name": "Первичная рекристаллизация",
+            "description": "Процесс образования новых зерен в деформированном материале без фазовых превращений"
+        },
+        "Term_5": {
+            "links": {
+                "has word": [
+                    {
+                        "to": "Word_10",
+                        "value": ""
+                    }
+                ],
+                "belongs to topic": [
+                    {
+                        "to": "Topic_2",
+                        "value": ""
+                    }
+                ]
+            },
+            "ID": 37,
+            "name": "Динамическая рекристаллизация",
+            "description": "Рекристаллизация, происходящая одновременно с деформацией"
+        },
+        "Term_6": {
+            "links": {
+                "has word": [
+                    {
+                        "to": "Word_11",
+                        "value": ""
+                    },
+                    {
+                        "to": "Word_12",
+                        "value": ""
+                    }
+                ],
+                "belongs to topic": [
+                    {
+                        "to": "Topic_3",
+                        "value": ""
+                    }
+                ]
+            },
+            "ID": 69,
+            "name": "Синергия процессов",
+            "description": "Взаимное влияние рекристаллизации и выделения частиц"
+        },
+        "Term_7": {
+            "links": {
+                "has word": [
+                    {
+                        "to": "Word_13",
+                        "value": ""
+                    }
+                ],
+                "belongs to topic": [
+                    {
+                        "to": "Topic_3",
+                        "value": ""
+                    }
+                ]
+            },
+            "ID": 70,
+            "name": "Конкуренция механизмов",
+            "description": "Соревнование между ростом зерен и частиц"
+        }
+    },
+    "Class_2": {
+        "Word_1": {
+            "links": {
+                "has word": [
+                    {
+                        "to": "Term_1",
+                        "value": ""
+                    }
+                ]
+            },
+            "ID": 4,
+            "name": "карбонитрид",
+            "description": "Соединение углерода и азота с металлами"
+        },
+        "Word_2": {
+            "links": {
+                "has word": [
+                    {
+                        "to": "Term_1",
+                        "value": ""
+                    }
+                ]
+            },
+            "ID": 5,
+            "name": "преципитация",
+            "description": "Выпадение из раствора в виде твердой фазы"
+        },
+        "Word_3": {
+            "links": {
+                "has word": [
+                    {
+                        "to": "Term_2",
+                        "value": ""
+                    }
+                ]
+            },
+            "ID": 6,
+            "name": "рекристаллизация",
+            "description": "Формирование новых кристаллических зерен"
+        },
+        "Word_4": {
+            "links": {
+                "has word": [
+                    {
+                        "to": "Term_3",
+                        "value": ""
+                    }
+                ]
+            },
+            "ID": 7,
+            "name": "созревание",
+            "description": "Процесс изменения размера частиц"
+        },
+        "Word_8": {
+            "links": {
+                "has word": [
+                    {
+                        "to": "Term_4",
+                        "value": ""
+                    }
+                ]
+            },
+            "ID": 38,
+            "name": "первичная",
+            "description": "Относящийся к начальной стадии процесса"
+        },
+        "Word_9": {
+            "links": {
+                "has word": [
+                    {
+                        "to": "Term_4",
+                        "value": ""
+                    }
+                ]
+            },
+            "ID": 39,
+            "name": "рекристаллизация",
+            "description": "Формирование новых кристаллических зерен"
+        },
+        "Word_10": {
+            "links": {
+                "has word": [
+                    {
+                        "to": "Term_5",
+                        "value": ""
+                    }
+                ]
+            },
+            "ID": 40,
+            "name": "динамическая",
+            "description": "Происходящий в процессе деформации"
+        },
+        "Word_11": {
+            "links": {
+                "has word": [
+                    {
+                        "to": "Term_6",
+                        "value": ""
+                    }
+                ]
+            },
+            "ID": 71,
+            "name": "синергия",
+            "description": "Совместное действие процессов"
+        },
+        "Word_12": {
+            "links": {
+                "has word": [
+                    {
+                        "to": "Term_6",
+                        "value": ""
+                    }
+                ]
+            },
+            "ID": 72,
+            "name": "процессов",
+            "description": "Относящийся к взаимодействию явлений"
+        },
+        "Word_13": {
+            "links": {
+                "has word": [
+                    {
+                        "to": "Term_7",
+                        "value": ""
+                    }
+                ]
+            },
+            "ID": 73,
+            "name": "конкуренция",
+            "description": "Соревнование механизмов роста"
+        }
+    },
+    "Class_3": {
+        "Material_type_1": {
+            "links": {},
+            "ID": 8,
+            "name": "Деформированные стали",
+            "description": "Сталь, подвергнутая пластической деформации"
+        },
+        "Material_type_2": {
+            "links": {},
+            "ID": 41,
+            "name": "Деформированные стали",
+            "description": "Сталь, подвергнутая пластической деформации"
+        },
+        "Material_type_3": {
+            "links": {},
+            "ID": 74,
+            "name": "Низкоуглеродистые стали",
+            "description": "Сталь с содержанием углерода менее 0.1%"
+        }
+    },
+    "Class_4": {
+        "Material_1": {
+            "links": {
+                "of type": [
+                    {
+                        "to": "Material_type_1",
+                        "value": ""
+                    }
+                ],
+                "contains element": [
+                    {
+                        "to": "Element_1",
+                        "value": "0.08%"
+                    },
+                    {
+                        "to": "Element_2",
+                        "value": "0.20%"
+                    },
+                    {
+                        "to": "Element_3",
+                        "value": "1.80%"
+                    },
+                    {
+                        "to": "Element_4",
+                        "value": "0.15%"
+                    },
+                    {
+                        "to": "Element_5",
+                        "value": "0.025%"
+                    },
+                    {
+                        "to": "Element_6",
+                        "value": "0.01-0.06%"
+                    },
+                    {
+                        "to": "Element_7",
+                        "value": "0.005%"
+                    },
+                    {
+                        "to": "Element_8",
+                        "value": "Баланс"
+                    }
+                ]
+            },
+            "ID": 9,
+            "name": "Steel composition 1",
+            "description": "Низкоуглеродистая сталь с добавками Nb, Ti, N"
+        },
+        "Material_2": {
+            "links": {
+                "of type": [
+                    {
+                        "to": "Material_type_2",
+                        "value": ""
+                    }
+                ],
+                "contains element": [
+                    {
+                        "to": "Element_1",
+                        "value": "0.08%"
+                    },
+                    {
+                        "to": "Element_2",
+                        "value": "0.20%"
+                    },
+                    {
+                        "to": "Element_3",
+                        "value": "1.80%"
+                    },
+                    {
+                        "to": "Element_4",
+                        "value": "0.15%"
+                    },
+                    {
+                        "to": "Element_5",
+                        "value": "0.025%"
+                    },
+                    {
+                        "to": "Element_6",
+                        "value": "0.01-0.06%"
+                    },
+                    {
+                        "to": "Element_7",
+                        "value": "0.005%"
+                    },
+                    {
+                        "to": "Element_8",
+                        "value": "Баланс"
+                    }
+                ]
+            },
+            "ID": 42,
+            "name": "Сталь состава 2",
+            "description": "Низкоуглеродистая сталь с добавками Nb, Ti, N"
+        },
+        "Material_3": {
+            "links": {
+                "of type": [
+                    {
+                        "to": "Material_type_3",
+                        "value": ""
+                    }
+                ],
+                "contains element": [
+                    {
+                        "to": "Element_1",
+                        "value": "0.08%"
+                    },
+                    {
+                        "to": "Element_2",
+                        "value": "0.20%"
+                    },
+                    {
+                        "to": "Element_3",
+                        "value": "1.80%"
+                    },
+                    {
+                        "to": "Element_4",
+                        "value": "0.15%"
+                    },
+                    {
+                        "to": "Element_5",
+                        "value": "0.025%"
+                    },
+                    {
+                        "to": "Element_6",
+                        "value": "0.01-0.06%"
+                    },
+                    {
+                        "to": "Element_7",
+                        "value": "0.005%"
+                    },
+                    {
+                        "to": "Element_8",
+                        "value": "Баланс"
+                    }
+                ]
+            },
+            "ID": 75,
+            "name": "Сталь состава 3",
+            "description": "Низкоуглеродистая сталь с микродобавками Nb и Ti"
+        }
+    },
+    "Class_5": {
+        "Element_1": {
+            "links": {
+                "contains element": [
+                    {
+                        "to": "Material_3",
+                        "value": "0.08%"
+                    }
+                ]
+            },
+            "ID": 76,
+            "name": "Carbon (C)",
+            "description": "Основной элемент для карбидообразования"
+        },
+        "Element_2": {
+            "links": {
+                "contains element": [
+                    {
+                        "to": "Material_3",
+                        "value": "0.20%"
+                    }
+                ]
+            },
+            "ID": 77,
+            "name": "Кремний (Si)",
+            "description": "Легирующий элемент для улучшения обрабатываемости"
+        },
+        "Element_3": {
+            "links": {
+                "contains element": [
+                    {
+                        "to": "Material_3",
+                        "value": "1.80%"
+                    }
+                ]
+            },
+            "ID": 78,
+            "name": "Марганец (Mn)",
+            "description": "Повышает прочность и закаливаемость"
+        },
+        "Element_4": {
+            "links": {
+                "contains element": [
+                    {
+                        "to": "Material_3",
+                        "value": "0.15%"
+                    }
+                ]
+            },
+            "ID": 79,
+            "name": "Molybdenum (Mo)",
+            "description": "Improves heat resistance"
+        },
+        "Element_5": {
+            "links": {
+                "contains element": [
+                    {
+                        "to": "Material_3",
+                        "value": "0.025%"
+                    }
+                ]
+            },
+            "ID": 80,
+            "name": "Titanium (Ti)",
+            "description": "Forms strengthening carbonitrides"
+        },
+        "Element_6": {
+            "links": {
+                "contains element": [
+                    {
+                        "to": "Material_3",
+                        "value": "0.01-0.06%"
+                    }
+                ]
+            },
+            "ID": 81,
+            "name": "Ниобий (Nb)",
+            "description": "Карбонитридный упрочнитель"
+        },
+        "Element_7": {
+            "links": {
+                "contains element": [
+                    {
+                        "to": "Material_3",
+                        "value": "0.005%"
+                    }
+                ]
+            },
+            "ID": 82,
+            "name": "Азот (N)",
+            "description": "Участвует в образовании нитридов"
+        },
+        "Element_8": {
+            "links": {
+                "contains element": [
+                    {
+                        "to": "Material_3",
+                        "value": "Баланс"
+                    }
+                ]
+            },
+            "ID": 83,
+            "name": "Железо (Fe)",
+            "description": "Основа сплава"
+        }
+    },
+    "Class_6": {
+        "Technology_1": {
+            "links": {
+                "include operation": [
+                    {
+                        "to": "Operation_1",
+                        "value": ""
+                    },
+                    {
+                        "to": "Operation_2",
+                        "value": ""
+                    }
+                ],
+                "applied to material": [
+                    {
+                        "to": "Material_1",
+                        "value": ""
+                    }
+                ],
+                "results in": [
+                    {
+                        "to": "Result_1",
+                        "value": ""
+                    }
+                ]
+            },
+            "ID": 18,
+            "name": "Mathematical modeling",
+            "description": "Прогнозирование кинетики выделения карбонитридов"
+        },
+        "Technology_2": {
+            "links": {
+                "include operation": [
+                    {
+                        "to": "Operation_3",
+                        "value": ""
+                    },
+                    {
+                        "to": "Operation_4",
+                        "value": ""
+                    }
+                ],
+                "applied to material": [
+                    {
+                        "to": "Material_2",
+                        "value": ""
+                    }
+                ],
+                "results in": [
+                    {
+                        "to": "Result_2",
+                        "value": ""
+                    }
+                ]
+            },
+            "ID": 51,
+            "name": "Mathematical modeling",
+            "description": "Прогнозирование кинетики рекристаллизации"
+        },
+        "Technology_3": {
+            "links": {
+                "include operation": [
+                    {
+                        "to": "Operation_5",
+                        "value": ""
+                    },
+                    {
+                        "to": "Operation_6",
+                        "value": ""
+                    }
+                ],
+                "applied to material": [
+                    {
+                        "to": "Material_3",
+                        "value": ""
+                    }
+                ],
+                "results in": [
+                    {
+                        "to": "Result_3",
+                        "value": ""
+                    }
+                ]
+            },
+            "ID": 84,
+            "name": "Mathematical modeling",
+            "description": "Прогнозирование взаимодействия рекристаллизации и выделения частиц"
+        }
+    },
+    "Class_7": {
+        "Operation_1": {
+            "links": {
+                "has parameter": [
+                    {
+                        "to": "Parameter_1",
+                        "value": ""
+                    }
+                ],
+                "involve process": [
+                    {
+                        "to": "Process_1",
+                        "value": ""
+                    }
+                ]
+            },
+            "ID": 19,
+            "name": "Расчет скорости зарождения частиц",
+            "description": "Определение частоты нуклеации карбонитридов"
+        },
+        "Operation_2": {
+            "links": {
+                "has parameter": [
+                    {
+                        "to": "Parameter_2",
+                        "value": ""
+                    }
+                ],
+                "involve process": [
+                    {
+                        "to": "Process_2",
+                        "value": ""
+                    }
+                ]
+            },
+            "ID": 20,
+            "name": "Моделирование роста частиц",
+            "description": "Симуляция изменения размера карбонитридных частиц"
+        },
+        "Operation_3": {
+            "links": {
+                "has parameter": [
+                    {
+                        "to": "Parameter_3",
+                        "value": ""
+                    }
+                ],
+                "involve process": [
+                    {
+                        "to": "Process_3",
+                        "value": ""
+                    }
+                ]
+            },
+            "ID": 52,
+            "name": "Расчет плотности дислокаций",
+            "description": "Определение изменения плотности дислокаций при деформации"
+        },
+        "Operation_4": {
+            "links": {
+                "has parameter": [
+                    {
+                        "to": "Parameter_4",
+                        "value": ""
+                    }
+                ],
+                "involve process": [
+                    {
+                        "to": "Process_4",
+                        "value": ""
+                    }
+                ]
+            },
+            "ID": 53,
+            "name": "Моделирование рекристаллизации",
+            "description": "Симуляция роста новых зерен"
+        },
+        "Operation_5": {
+            "links": {
+                "has parameter": [
+                    {
+                        "to": "Parameter_5",
+                        "value": ""
+                    }
+                ],
+                "involve process": [
+                    {
+                        "to": "Process_5",
+                        "value": ""
+                    }
+                ]
+            },
+            "ID": 85,
+            "name": "Моделирование синергии",
+            "description": "Симуляция взаимного влияния процессов"
+        },
+        "Operation_6": {
+            "links": {
+                "has parameter": [
+                    {
+                        "to": "Parameter_6",
+                        "value": ""
+                    }
+                ],
+                "involve process": [
+                    {
+                        "to": "Process_6",
+                        "value": ""
+                    }
+                ]
+            },
+            "ID": 86,
+            "name": "Анализ кинетики взаимодействия",
+            "description": "Оценка скорости конкурирующих механизмов"
+        }
+    },
+    "Class_8": {
+        "Parameter_1": {
+            "links": {
+                "value of parameter": [
+                    {
+                        "to": "Result_1",
+                        "value": "2.6 с⁻¹"
+                    }
+                ]
+            },
+            "ID": 21,
+            "name": "Скорость деформации",
+            "description": "Параметр процесса деформации"
+        },
+        "Parameter_2": {
+            "links": {
+                "value of parameter": [
+                    {
+                        "to": "Result_1",
+                        "value": "900°C"
+                    }
+                ]
+            },
+            "ID": 22,
+            "name": "Температура процесса",
+            "description": "Контролируемый температурный режим"
+        },
+        "Parameter_3": {
+            "links": {
+                "value of parameter": [
+                    {
+                        "to": "Result_2",
+                        "value": "2.6 с⁻¹"
+                    }
+                ]
+            },
+            "ID": 54,
+            "name": "Скорость деформации",
+            "description": "Параметр процесса деформации"
+        },
+        "Parameter_4": {
+            "links": {
+                "value of parameter": [
+                    {
+                        "to": "Result_2",
+                        "value": "900°C"
+                    }
+                ]
+            },
+            "ID": 55,
+            "name": "Температура процесса",
+            "description": "Контролируемый температурный режим"
+        },
+        "Parameter_5": {
+            "links": {
+                "value of parameter": [
+                    {
+                        "to": "Result_3",
+                        "value": "0.8-1.2 с⁻¹"
+                    }
+                ]
+            },
+            "ID": 87,
+            "name": "Скорость деформации",
+            "description": "Контролируемый параметр обработки"
+        },
+        "Parameter_6": {
+            "links": {
+                "value of parameter": [
+                    {
+                        "to": "Result_3",
+                        "value": "850-950°C"
+                    }
+                ]
+            },
+            "ID": 88,
+            "name": "Интервал температур",
+            "description": "Диапазон температур обработки"
+        }
+    },
+    "Class_9": {
+        "Process_1": {
+            "links": {
+                "involve process": [
+                    {
+                        "to": "Operation_1",
+                        "value": ""
+                    }
+                ],
+                "use phenomenon": [
+                    {
+                        "to": "Phenomenon_1",
+                        "value": ""
+                    }
+                ]
+            },
+            "ID": 23,
+            "name": "Диффузионный рост",
+            "description": "Управляемый диффузией рост частиц"
+        },
+        "Process_2": {
+            "links": {
+                "involve process": [
+                    {
+                        "to": "Operation_2",
+                        "value": ""
+                    }
+                ],
+                "use phenomenon": [
+                    {
+                        "to": "Phenomenon_2",
+                        "value": ""
+                    }
+                ]
+            },
+            "ID": 24,
+            "name": "Динамическая рекристаллизация",
+            "description": "Формирование новых зерен при деформации"
+        },
+        "Process_3": {
+            "links": {
+                "involve process": [
+                    {
+                        "to": "Operation_3",
+                        "value": ""
+                    }
+                ],
+                "use phenomenon": [
+                    {
+                        "to": "Phenomenon_3",
+                        "value": ""
+                    }
+                ]
+            },
+            "ID": 56,
+            "name": "Аннигиляция дислокаций",
+            "description": "Уменьшение плотности дислокаций при рекристаллизации"
+        },
+        "Process_4": {
+            "links": {
+                "involve process": [
+                    {
+                        "to": "Operation_4",
+                        "value": ""
+                    }
+                ],
+                "use phenomenon": [
+                    {
+                        "to": "Phenomenon_4",
+                        "value": ""
+                    }
+                ]
+            },
+            "ID": 57,
+            "name": "Миграция границ зерен",
+            "description": "Движение границ зерен при росте новых кристаллов"
+        },
+        "Process_5": {
+            "links": {
+                "involve process": [
+                    {
+                        "to": "Operation_5",
+                        "value": ""
+                    }
+                ],
+                "use phenomenon": [
+                    {
+                        "to": "Phenomenon_5",
+                        "value": ""
+                    }
+                ]
+            },
+            "ID": 89,
+            "name": "Синергетическое замедление",
+            "description": "Взаимное торможение процессов роста"
+        },
+        "Process_6": {
+            "links": {
+                "involve process": [
+                    {
+                        "to": "Operation_6",
+                        "value": ""
+                    }
+                ],
+                "use phenomenon": [
+                    {
+                        "to": "Phenomenon_6",
+                        "value": ""
+                    }
+                ]
+            },
+            "ID": 90,
+            "name": "Конкурирующая диффузия",
+            "description": "Соревнование атомных потоков к разным центрам"
+        }
+    },
+    "Class_10": {
+        "Phenomenon_1": {
+            "links": {
+                "use phenomenon": [
+                    {
+                        "to": "Process_1",
+                        "value": ""
+                    }
+                ],
+                "is explained by phenomenon": [
+                    {
+                        "to": "Result_1",
+                        "value": ""
+                    }
+                ]
+            },
+            "ID": 25,
+            "name": "Сверхнасыщение твердого раствора",
+            "description": "Перенасыщение атомами легирующих элементов"
+        },
+        "Phenomenon_2": {
+            "links": {
+                "use phenomenon": [
+                    {
+                        "to": "Process_2",
+                        "value": ""
+                    }
+                ]
+            },
+            "ID": 26,
+            "name": "Дислокационная диффузия",
+            "description": "Движение атомов вдоль дислокаций"
+        },
+        "Phenomenon_3": {
+            "links": {
+                "use phenomenon": [
+                    {
+                        "to": "Process_3",
+                        "value": ""
+                    }
+                ],
+                "is explained by phenomenon": [
+                    {
+                        "to": "Result_2",
+                        "value": ""
+                    }
+                ]
+            },
+            "ID": 58,
+            "name": "Пиннинг частицами",
+            "description": "Замедление рекристаллизации дисперсными частицами"
+        },
+        "Phenomenon_4": {
+            "links": {
+                "use phenomenon": [
+                    {
+                        "to": "Process_4",
+                        "value": ""
+                    }
+                ]
+            },
+            "ID": 59,
+            "name": "Энергия границ зерен",
+            "description": "Влияние поверхностной энергии на рост зерен"
+        },
+        "Phenomenon_5": {
+            "links": {
+                "use phenomenon": [
+                    {
+                        "to": "Process_5",
+                        "value": ""
+                    }
+                ],
+                "is explained by phenomenon": [
+                    {
+                        "to": "Result_3",
+                        "value": ""
+                    }
+                ]
+            },
+            "ID": 91,
+            "name": "Захват границ зерен",
+            "description": "Фиксация границ частицами выделений"
+        },
+        "Phenomenon_6": {
+            "links": {
+                "use phenomenon": [
+                    {
+                        "to": "Process_6",
+                        "value": ""
+                    }
+                ]
+            },
+            "ID": 92,
+            "name": "Перераспределение легирующих элементов",
+            "description": "Миграция атомов между конкурирующими процессами"
+        }
+    },
+    "Class_11": {
+        "Equipment_1": {
+            "links": {
+                "utilizes equipment": [
+                    {
+                        "to": "Operation_1",
+                        "value": ""
+                    }
+                ]
+            },
+            "ID": 27,
+            "name": "C++ Program",
+            "description": "Tool for numerical modeling"
+        },
+        "Equipment_2": {
+            "links": {
+                "utilizes equipment": [
+                    {
+                        "to": "Operation_3",
+                        "value": ""
+                    },
+                    {
+                        "to": "Operation_4",
+                        "value": ""
+                    }
+                ]
+            },
+            "ID": 60,
+            "name": "Программа на Python",
+            "description": "Tool for numerical modeling"
+        },
+        "Equipment_3": {
+            "links": {
+                "utilizes equipment": [
+                    {
+                        "to": "Operation_5",
+                        "value": ""
+                    },
+                    {
+                        "to": "Operation_6",
+                        "value": ""
+                    }
+                ]
+            },
+            "ID": 93,
+            "name": "Многофизичная модель",
+            "description": "Комплексная численная модель в COMSOL"
+        }
+    },
+    "Class_12": {
+        "Topic_1": {
+            "links": {
+                "belongs to topic": [
+                    {
+                        "to": "Term_1",
+                        "value": ""
+                    },
+                    {
+                        "to": "Article_1",
+                        "value": ""
+                    }
+                ]
+            },
+            "ID": 28,
+            "name": "Кинетика выделения и рекристаллизации",
+            "description": "Изучение процессов структурообразования в сталях"
+        },
+        "Topic_2": {
+            "links": {
+                "belongs to topic": [
+                    {
+                        "to": "Term_4",
+                        "value": ""
+                    },
+                    {
+                        "to": "Article_3",
+                        "value": ""
+                    }
+                ]
+            },
+            "ID": 61,
+            "name": "Кинетика рекристаллизации",
+            "description": "Изучение процессов структурообразования в деформированных сталях"
+        },
+        "Topic_3": {
+            "links": {
+                "belongs to topic": [
+                    {
+                        "to": "Term_6",
+                        "value": ""
+                    },
+                    {
+                        "to": "Article_4",
+                        "value": ""
+                    }
+                ]
+            },
+            "ID": 94,
+            "name": "Взаимодействие структурных процессов",
+            "description": "Изучение совместного влияния фазовых превращений"
+        }
+    },
+    "Class_13": {
+        "Organization_1": {
+            "links": {
+                "works in": [
+                    {
+                        "to": "Author_1",
+                        "value": ""
+                    }
+                ],
+                "was obtained out in": [
+                    {
+                        "to": "Result_1",
+                        "value": ""
+                    }
+                ]
+            },
+            "ID": 29,
+            "name": "Институт металлофизики НАН Украины",
+            "description": "Научное учреждение в области материаловедения"
+        },
+        "Organization_2": {
+            "links": {
+                "works in": [
+                    {
+                        "to": "Author_3",
+                        "value": ""
+                    }
+                ],
+                "was obtained out in": [
+                    {
+                        "to": "Result_2",
+                        "value": ""
+                    }
+                ]
+            },
+            "ID": 62,
+            "name": "Институт металлофизики НАН Украины",
+            "description": "Научное учреждение в области материаловедения"
+        },
+        "Organization_3": {
+            "links": {
+                "works in": [
+                    {
+                        "to": "Author_5",
+                        "value": ""
+                    }
+                ],
+                "was obtained out in": [
+                    {
+                        "to": "Result_3",
+                        "value": ""
+                    }
+                ]
+            },
+            "ID": 95,
+            "name": "Institute for Problems of Materials Science, NAS of Ukraine",
+            "description": "Научный центр по исследованию металлов"
+        }
+    },
+    "Class_14": {
+        "Author_1": {
+            "links": {
+                "has author": [
+                    {
+                        "to": "Article_1",
+                        "value": ""
+                    }
+                ],
+                "works in": [
+                    {
+                        "to": "Organization_1",
+                        "value": ""
+                    }
+                ]
+            },
+            "ID": 30,
+            "name": "В. В. Каверинский",
+            "description": "Специалист в области моделирования материалов"
+        },
+        "Author_2": {
+            "links": {
+                "has author": [
+                    {
+                        "to": "Article_1",
+                        "value": ""
+                    }
+                ],
+                "works in": [
+                    {
+                        "to": "Organization_1",
+                        "value": ""
+                    }
+                ]
+            },
+            "ID": 31,
+            "name": "З. П. Сухенко",
+            "description": "Исследователь фазовых превращений"
+        },
+        "Author_3": {
+            "links": {
+                "has author": [
+                    {
+                        "to": "Article_3",
+                        "value": ""
+                    }
+                ],
+                "works in": [
+                    {
+                        "to": "Organization_2",
+                        "value": ""
+                    }
+                ]
+            },
+            "ID": 63,
+            "name": "В. В. Каверинский",
+            "description": "Специалист в области моделирования материалов"
+        },
+        "Author_4": {
+            "links": {
+                "has author": [
+                    {
+                        "to": "Article_3",
+                        "value": ""
+                    }
+                ],
+                "works in": [
+                    {
+                        "to": "Organization_2",
+                        "value": ""
+                    }
+                ]
+            },
+            "ID": 64,
+            "name": "З. П. Сухенко",
+            "description": "Исследователь фазовых превращений"
+        },
+        "Author_5": {
+            "links": {
+                "has author": [
+                    {
+                        "to": "Article_4",
+                        "value": ""
+                    }
+                ],
+                "works in": [
+                    {
+                        "to": "Organization_3",
+                        "value": ""
+                    }
+                ]
+            },
+            "ID": 96,
+            "name": "В. В. Каверинский",
+            "description": "Ведущий исследователь структурных процессов"
+        },
+        "Author_6": {
+            "links": {
+                "has author": [
+                    {
+                        "to": "Article_4",
+                        "value": ""
+                    }
+                ],
+                "works in": [
+                    {
+                        "to": "Organization_3",
+                        "value": ""
+                    }
+                ]
+            },
+            "ID": 97,
+            "name": "О. И. Погорелов",
+            "description": "Специалист по математическому моделированию"
+        }
+    },
+    "Class_15": {
+        "Article_1": {
+            "links": {
+                "has author": [
+                    {
+                        "to": "Author_1",
+                        "value": ""
+                    },
+                    {
+                        "to": "Author_2",
+                        "value": ""
+                    }
+                ],
+                "uses method": [
+                    {
+                        "to": "Research_method_1",
+                        "value": ""
+                    }
+                ],
+                "studies property": [
+                    {
+                        "to": "Material_property_1",
+                        "value": ""
+                    }
+                ],
+                "describes result": [
+                    {
+                        "to": "Result_1",
+                        "value": ""
+                    }
+                ],
+                "includes terms": [
+                    {
+                        "to": "Term_1",
+                        "value": ""
+                    },
+                    {
+                        "to": "Term_2",
+                        "value": ""
+                    }
+                ],
+                "belongs to topic": [
+                    {
+                        "to": "Topic_1",
+                        "value": ""
+                    }
+                ]
+            },
+            "ID": 32,
+            "name": "Математическое моделирование кинетики первичной рекристаллизации и выделения карбонитридных частиц в сталях. I. Выделение",
+            "description": "Статья о моделировании процессов структурообразования"
+        },
+        "Article_3": {
+            "links": {
+                "has author": [
+                    {
+                        "to": "Author_3",
+                        "value": ""
+                    },
+                    {
+                        "to": "Author_4",
+                        "value": ""
+                    }
+                ],
+                "uses method": [
+                    {
+                        "to": "Research_method_2",
+                        "value": ""
+                    }
+                ],
+                "studies property": [
+                    {
+                        "to": "Material_property_2",
+                        "value": ""
+                    }
+                ],
+                "describes result": [
+                    {
+                        "to": "Result_2",
+                        "value": ""
+                    }
+                ],
+                "includes terms": [
+                    {
+                        "to": "Term_4",
+                        "value": ""
+                    },
+                    {
+                        "to": "Term_5",
+                        "value": ""
+                    }
+                ],
+                "belongs to topic": [
+                    {
+                        "to": "Topic_2",
+                        "value": ""
+                    }
+                ]
+            },
+            "ID": 65,
+            "name": "Математическое моделирование кинетики первичной рекристаллизации и выделения карбонитридных частиц в сталях. II. Рекристаллизация",
+            "description": "Статья о моделировании процессов структурообразования"
+        },
+        "Article_4": {
+            "links": {
+                "has author": [
+                    {
+                        "to": "Author_5",
+                        "value": ""
+                    },
+                    {
+                        "to": "Author_6",
+                        "value": ""
+                    }
+                ],
+                "uses method": [
+                    {
+                        "to": "Research_method_3",
+                        "value": ""
+                    }
+                ],
+                "studies property": [
+                    {
+                        "to": "Material_property_3",
+                        "value": ""
+                    }
+                ],
+                "describes result": [
+                    {
+                        "to": "Result_3",
+                        "value": ""
+                    }
+                ],
+                "includes terms": [
+                    {
+                        "to": "Term_6",
+                        "value": ""
+                    },
+                    {
+                        "to": "Term_7",
+                        "value": ""
+                    }
+                ],
+                "belongs to topic": [
+                    {
+                        "to": "Topic_3",
+                        "value": ""
+                    }
+                ]
+            },
+            "ID": 98,
+            "name": "Математическое моделирование кинетики первичной рекристаллизации и выделения карбонитридных частиц в сталях. III. Взаимодействие процессов",
+            "description": "Study of the synergy of structural transformations"
+        }
+    },
+    "Class_16": {
+        "Research_method_1": {
+            "links": {
+                "studies": [
+                    {
+                        "to": "Material_property_1",
+                        "value": ""
+                    }
+                ],
+                "utilizes equipment": [
+                    {
+                        "to": "Equipment_1",
+                        "value": ""
+                    }
+                ],
+                "was studied using": [
+                    {
+                        "to": "Equipment_1",
+                        "value": ""
+                    }
+                ]
+            },
+            "ID": 33,
+            "name": "CALPHAD method",
+            "description": "Thermodynamic modeling of phase diagrams"
+        },
+        "Research_method_2": {
+            "links": {
+                "studies": [
+                    {
+                        "to": "Material_property_2",
+                        "value": ""
+                    }
+                ],
+                "utilizes equipment": [
+                    {
+                        "to": "Equipment_2",
+                        "value": ""
+                    }
+                ],
+                "was studied using": [
+                    {
+                        "to": "Equipment_2",
+                        "value": ""
+                    }
+                ]
+            },
+            "ID": 66,
+            "name": "CALPHAD method",
+            "description": "Thermodynamic modeling of phase diagrams"
+        },
+        "Research_method_3": {
+            "links": {
+                "studies": [
+                    {
+                        "to": "Material_property_3",
+                        "value": ""
+                    }
+                ],
+                "utilizes equipment": [
+                    {
+                        "to": "Equipment_3",
+                        "value": ""
+                    }
+                ],
+                "was studied using": [
+                    {
+                        "to": "Equipment_3",
+                        "value": ""
+                    }
+                ]
+            },
+            "ID": 99,
+            "name": "Multilevel modeling",
+            "description": "Combination of CALPHAD and finite element analysis"
+        }
+    },
+    "Class_17": {
+        "Material_property_1": {
+            "links": {
+                "studies": [
+                    {
+                        "to": "Research_method_1",
+                        "value": ""
+                    }
+                ],
+                "has property": [
+                    {
+                        "to": "Material_1",
+                        "value": "200-500 нм"
+                    }
+                ],
+                "property value change": [
+                    {
+                        "to": "Result_1",
+                        "value": "Увеличение плотности частиц"
+                    }
+                ]
+            },
+            "ID": 34,
+            "name": "Средний размер частиц",
+            "description": "Характеристика дисперсности карбонитридов"
+        },
+        "Material_property_2": {
+            "links": {
+                "studies": [
+                    {
+                        "to": "Research_method_2",
+                        "value": ""
+                    }
+                ],
+                "has property": [
+                    {
+                        "to": "Material_2",
+                        "value": "200-500 нм"
+                    }
+                ],
+                "property value change": [
+                    {
+                        "to": "Result_2",
+                        "value": "Уменьшение размера зерен"
+                    }
+                ]
+            },
+            "ID": 67,
+            "name": "Размер зерен",
+            "description": "Характеристика структуры стали после рекристаллизации"
+        },
+        "Material_property_3": {
+            "links": {
+                "studies": [
+                    {
+                        "to": "Research_method_3",
+                        "value": ""
+                    }
+                ],
+                "has property": [
+                    {
+                        "to": "Material_3",
+                        "value": "150-300 нм"
+                    }
+                ],
+                "property value change": [
+                    {
+                        "to": "Result_3",
+                        "value": "Стабилизация структуры"
+                    }
+                ]
+            },
+            "ID": 100,
+            "name": "Распределение частиц",
+            "description": "Характеристика пространственного расположения выделений"
+        }
+    },
+    "Class_18": {
+        "Result_1": {
+            "links": {
+                "results in": [
+                    {
+                        "to": "Technology_1",
+                        "value": ""
+                    },
+                    {
+                        "to": "Material_1",
+                        "value": ""
+                    }
+                ],
+                "property value change": [
+                    {
+                        "to": "Material_property_1",
+                        "value": "Оптимизация размера и количества частиц"
+                    }
+                ],
+                "was obtained out in": [
+                    {
+                        "to": "Organization_1",
+                        "value": ""
+                    }
+                ]
+            },
+            "ID": 35,
+            "name": "Улучшение структуры стали",
+            "description": "Результат оптимизации процессов выделения"
+        },
+        "Result_2": {
+            "links": {
+                "results in": [
+                    {
+                        "to": "Technology_2",
+                        "value": ""
+                    },
+                    {
+                        "to": "Material_2",
+                        "value": ""
+                    }
+                ],
+                "property value change": [
+                    {
+                        "to": "Material_property_2",
+                        "value": "Оптимизация размера зерен"
+                    }
+                ],
+                "was obtained out in": [
+                    {
+                        "to": "Organization_2",
+                        "value": ""
+                    }
+                ]
+            },
+            "ID": 68,
+            "name": "Улучшение структуры стали",
+            "description": "Результат оптимизации процессов рекристаллизации"
+        },
+        "Result_3": {
+            "links": {
+                "results in": [
+                    {
+                        "to": "Technology_3",
+                        "value": ""
+                    },
+                    {
+                        "to": "Material_3",
+                        "value": ""
+                    }
+                ],
+                "property value change": [
+                    {
+                        "to": "Material_property_3",
+                        "value": "Оптимизация дисперсности"
+                    }
+                ],
+                "was obtained out in": [
+                    {
+                        "to": "Organization_3",
+                        "value": ""
+                    }
+                ]
+            },
+            "ID": 101,
+            "name": "Синергетическое упрочнение",
+            "description": "Результат взаимодействия рекристаллизации и выделения"
+        }
+    }
+}

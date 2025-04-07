@@ -1,0 +1,197 @@
+{
+    "Key_word": {
+        "phase_diagrams": {
+            "links": {},
+            "name": "Phase Diagrams",
+            "description": "Graphical representations of the phases of a material system as a function of temperature, pressure, and composition."
+        },
+        "kinetics_of_phase_transformations": {
+            "links": {},
+            "name": "Kinetics of Phase Transformations",
+            "description": "Study of the rates and mechanisms of phase changes in materials."
+        },
+        "recrystallization": {
+            "links": {},
+            "name": "Recrystallization",
+            "description": "Process of forming new crystal grains in a material to replace deformed ones during annealing."
+        },
+        "Ostwald_ripening": {
+            "links": {},
+            "name": "Ostwald Ripening",
+            "description": "Phenomenon where larger particles grow at the expense of smaller ones due to interfacial energy differences."
+        },
+        "hot_brittleness": {
+            "links": {},
+            "name": "Hot Brittleness",
+            "description": "Loss of ductility in materials at elevated temperatures during deformation."
+        }
+    },
+    "Technology": {
+        "mathematical_modeling_of_austenite_decomposition": {
+            "links": {
+                "include_process": [
+                    { "to": "ferritic_transformation", "value": "quantitative" },
+                    { "to": "pearlitic_transformation", "value": "quantitative" }
+                ],
+                "applied_to_material": [
+                    { "to": "alloyed_steel", "value": "composition-dependent" }
+                ],
+                "involve_process": [
+                    { "to": "phase_transformations", "value": "thermodynamic and kinetic" }
+                ]
+            },
+            "name": "Mathematical Modeling of Austenite Decomposition",
+            "description": "Computer-based model simulating phase transformations in alloyed steels under varying cooling rates."
+        },
+        "deformation_heat_processing": {
+            "links": {
+                "include_process": [
+                    { "to": "hot_deformation", "value": "3-20% per stage" },
+                    { "to": "cold_work_hardening", "value": "post-deformation" }
+                ],
+                "applied_to_material": [
+                    { "to": "Al_Si_alloy", "value": "improves ductility and strength" }
+                ]
+            },
+            "name": "Deformation Heat Processing",
+            "description": "Sequential hot deformation and annealing to refine microstructure and enhance mechanical properties."
+        }
+    },
+    "Process": {
+        "phase_transformations": {
+            "links": {
+                "use_phenomenon": [
+                    { "to": "nucleation_and_growth", "value": "kinetic-controlled" }
+                ]
+            },
+            "name": "Phase Transformations",
+            "description": "Changes in material phases (e.g., austenite to ferrite) driven by thermodynamic and kinetic factors."
+        },
+        "carbonitride_precipitation": {
+            "links": {
+                "use_phenomenon": [
+                    { "to": "Ostwald_ripening", "value": "particle coarsening" }
+                ]
+            },
+            "name": "Carbonitride Precipitation",
+            "description": "Formation of dispersed carbonitride particles in steel, affecting recrystallization and mechanical properties."
+        },
+        "hot_deformation": {
+            "links": {
+                "use_phenomenon": [
+                    { "to": "hot_brittleness", "value": "temperature-dependent" }
+                ]
+            },
+            "name": "Hot Deformation",
+            "description": "Plastic shaping of materials at elevated temperatures to refine microstructure."
+        }
+    },
+    "Phenomenon": {
+        "nucleation_and_growth": {
+            "links": {},
+            "name": "Nucleation and Growth",
+            "description": "Formation and expansion of new phase nuclei in a material."
+        }
+    },
+    "Equipment": {
+        "computer_program_C++": {
+            "links": {},
+            "name": "C++ Computer Program",
+            "description": "Software tool for simulating phase transformations in alloyed steels."
+        }
+    },
+    "Topic": {
+        "materials_science": {
+            "links": {},
+            "name": "Materials Science",
+            "description": "Interdisciplinary field studying the properties and applications of materials."
+        },
+        "metallurgy": {
+            "links": {},
+            "name": "Metallurgy",
+            "description": "Science of extracting, processing, and modifying metals and alloys."
+        }
+    },
+    "Organization": {
+        "I_M_Frantsevich_Institute": {
+            "links": {},
+            "name": "I. M. Frantsevich Institute for Problems in Materials Science",
+            "description": "Ukrainian research institute specializing in materials science and engineering."
+        }
+    },
+    "Author": {
+        "V_V_Kaverynsky": {
+            "links": {
+                "works_in": [
+                    { "to": "I_M_Frantsevich_Institute", "value": "affiliation" }
+                ]
+            },
+            "name": "V. V. Kaverynsky",
+            "description": "Researcher in materials science, focusing on phase transformations and alloy processing."
+        }
+    },
+    "Article": {
+        "MFiNT_39_1051": {
+            "links": {
+                "deals_with_material": [
+                    { "to": "alloyed_steel", "value": "primary focus" }
+                ],
+                "studies_process": [
+                    { "to": "phase_transformations", "value": "kinetics and thermodynamics" }
+                ],
+                "has_results": [
+                    { "to": "verified_model", "value": "experimentally validated" }
+                ],
+                "develops_technology": [
+                    { "to": "mathematical_modeling_of_austenite_decomposition", "value": "C++ implementation" }
+                ],
+                "belongs_to_topic": [
+                    { "to": "materials_science", "value": "core" }
+                ],
+                "has_author": [
+                    { "to": "V_V_Kaverynsky", "value": "lead author" }
+                ],
+                "uses_method": [
+                    { "to": "CALPHAD_method", "value": "thermodynamic calculations" }
+                ],
+                "includes_terms": [
+                    { "to": "phase_diagrams" },
+                    { "to": "kinetics_of_phase_transformations" }
+                ]
+            },
+            "name": "Mathematical Modelling of Kinetics of Decomposition of the Supercooled Austenite in Alloyed Steels",
+            "description": "Develops a model to predict phase transformations in steels, validated against experimental data."
+        }
+    },
+    "Research_method": {
+        "CALPHAD_method": {
+            "links": {},
+            "name": "CALPHAD Method",
+            "description": "Computational approach for calculating phase diagrams and thermodynamic properties."
+        }
+    },
+    "Material_property": {
+        "ductility": {
+            "links": {},
+            "name": "Ductility",
+            "description": "Ability of a material to deform under tensile stress without fracture."
+        },
+        "ultimate_tensile_strength": {
+            "links": {},
+            "name": "Ultimate Tensile Strength",
+            "description": "Maximum stress a material can withstand while being stretched or pulled."
+        }
+    },
+    "Result": {
+        "verified_model": {
+            "links": {},
+            "name": "Verified Model",
+            "description": "Computer model validated against experimental data for phase transformation predictions."
+        },
+        "improved_ductility_and_strength": {
+            "links": {},
+            "name": "Improved Ductility and Strength",
+            "description": "Enhanced mechanical properties in Al-Si alloys via deformation heat processing."
+        }
+    }
+}

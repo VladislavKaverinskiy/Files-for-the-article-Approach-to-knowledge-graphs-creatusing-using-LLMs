@@ -1,0 +1,203 @@
+{
+  "Term": {
+    "Term_1": {
+      "links": {
+        "has_word": [
+          {"to": "Word_1", "value": "Primary"},
+          {"to": "Word_2", "value": "Recrystallization"}
+        ]
+      },
+      "name": "Primary Recrystallization",
+      "description": "Process of new grain formation in deformed materials during annealing [[1]]"
+    },
+    "Term_2": {
+      "links": {
+        "has_word": [
+          {"to": "Word_3", "value": "Carbonitride"},
+          {"to": "Word_4", "value": "Particles"}
+        ]
+      },
+      "name": "Carbonitride Particles",
+      "description": "Excess phase precipitates formed from solid solution in steels [[2]]"
+    },
+    "Term_3": {
+      "links": {
+        "has_word": [
+          {"to": "Word_5", "value": "Kinetics"}
+        ]
+      },
+      "name": "Kinetics",
+      "description": "Study of transformation rates during precipitation and recrystallization [[3]]"
+    }
+  },
+  "Word": {
+    "Word_1": {"name": "Primary"},
+    "Word_2": {"name": "Recrystallization"},
+    "Word_3": {"name": "Carbonitride"},
+    "Word_4": {"name": "Particles"},
+    "Word_5": {"name": "Kinetics"}
+  },
+  "Material_type": {
+    "Material_1": {
+      "links": {
+        "has_property": [
+          {"to": "Material_property_1", "value": "Nb content"},
+          {"to": "Material_property_2", "value": "Grain size"}
+        ]
+      },
+      "name": "Alloyed Steels",
+      "description": "Steels with Nb, Ti, and other microalloying elements studied in precipitation modeling [[4]]"
+    },
+    "Material_2": {
+      "name": "Austenite",
+      "description": "High-temperature phase serving as matrix for carbonitride precipitation [[5]]"
+    },
+    "Material_3": {
+      "name": "Nb(C,N)",
+      "description": "Niobium carbonitride particles forming during cooling [[6]]"
+    }
+  },
+  "Technology": {
+    "Technology_1": {
+      "links": {
+        "include_process": [
+          {"to": "Process_1"},
+          {"to": "Process_2"}
+        ]
+      },
+      "name": "Mathematical Modeling",
+      "description": "Computational approach for simulating precipitation and recrystallization [[7]]"
+    }
+  },
+  "Process": {
+    "Process_1": {
+      "links": {
+        "use_phenomenon": [
+          {"to": "Phenomenon_1"}
+        ]
+      },
+      "name": "Precipitation",
+      "description": "Formation of carbonitride particles from supersaturated solid solution [[8]]"
+    },
+    "Process_2": {
+      "name": "Ostwald Ripening",
+      "description": "Coarsening of particles through diffusion-driven mass transfer [[9]]"
+    }
+  },
+  "Phenomenon": {
+    "Phenomenon_1": {
+      "name": "Diffusion",
+      "description": "Atomic migration driving particle growth and Ostwald ripening [[10]]"
+    },
+    "Phenomenon_2": {
+      "name": "Supersaturation",
+      "description": "Driving force for precipitation from non-equilibrium solid solutions [[11]]"
+    }
+  },
+  "Equipment": {
+    "Equipment_1": {
+      "name": "Computer Program (Python)",
+      "description": "Software implementation of the precipitation kinetics model [[12]]"
+    }
+  },
+  "Topic": {
+    "Topic_1": {
+      "name": "Materials Science",
+      "description": "Study of microstructure evolution during thermal-mechanical processing [[13]]"
+    },
+    "Topic_2": {
+      "name": "Metallurgy",
+      "description": "Application of thermodynamics to steel processing [[14]]"
+    }
+  },
+  "Organization": {
+    "Organization_1": {
+      "name": "I. M. Frantsevich Institute for Problems in Materials Science",
+      "description": "Ukrainian research institution affiliated with NAS [[15]]"
+    }
+  },
+  "Author": {
+    "Author_1": {
+      "links": {
+        "works_in": [
+          {"to": "Organization_1"}
+        ]
+      },
+      "name": "V. V. Kaverinsky",
+      "description": "Lead developer of the precipitation kinetics model [[15]]"
+    },
+    "Author_2": {
+      "links": {
+        "works_in": [
+          {"to": "Organization_1"}
+        ]
+      },
+      "name": "Z. P. Sukhenko",
+      "description": "Co-author specializing in phase transformation modeling [[15]]"
+    }
+  },
+  "Article": {
+    "Article_1": {
+      "links": {
+        "has_author": [
+          {"to": "Author_1"},
+          {"to": "Author_2"}
+        ],
+        "deals_with_material": [
+          {"to": "Material_1"}
+        ],
+        "develops_technology": [
+          {"to": "Technology_1"}
+        ],
+        "belongs_to_topic": [
+          {"to": "Topic_1"},
+          {"to": "Topic_2"}
+        ],
+        "utilizes_equipment": [
+          {"to": "Equipment_1"}
+        ],
+        "uses_method": [
+          {"to": "Research_method_1"}
+        ]
+      },
+      "name": "Mathematical Modelling of Primary Recrystallization Kinetics and Precipitation of Carbonitride Particles in Steels. I. Precipitation",
+      "description": "2021 study on precipitation modeling in microalloyed steels [[15]]"
+    }
+  },
+  "Research_method": {
+    "Research_method_1": {
+      "links": {
+        "uses_method": [
+          {"to": "Term_4"}
+        ]
+      },
+      "name": "CALPHAD Method",
+      "description": "Thermodynamic framework for phase equilibrium calculations [[16]]"
+    }
+  },
+  "Material_property": {
+    "Material_property_1": {
+      "name": "Nb content",
+      "description": "Niobium concentration affecting precipitation kinetics (0.01-0.06 wt%) [[17]]"
+    },
+    "Material_property_2": {
+      "name": "Grain size",
+      "description": "Initial austenite grain size (100 µm) influencing nucleation sites [[18]]"
+    }
+  },
+  "Result": {
+    "Result_1": {
+      "links": {
+        "is_explained_by_phenomenon": [
+          {"to": "Phenomenon_1"}
+        ]
+      },
+      "name": "Particle Size Evolution",
+      "description": "Modeled growth of Nb(C,N) particles during Ostwald ripening [[19]]"
+    },
+    "Result_2": {
+      "name": "Nucleation Rate",
+      "description": "Calculated using Zeldovich factor and diffusion coefficients [[20]]"
+    }
+  }
+}

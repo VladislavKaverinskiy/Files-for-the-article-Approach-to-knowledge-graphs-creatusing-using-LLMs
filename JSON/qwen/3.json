@@ -1,0 +1,203 @@
+{
+  "Term": {
+    "Term_1": {
+      "links": {
+        "has_word": [
+          {"to": "Word_1", "value": "Primary"},
+          {"to": "Word_2", "value": "Recrystallization"}
+        ]
+      },
+      "name": "Primary Recrystallization",
+      "description": "Formation of new grains in deformed materials during annealing, influenced by carbonitride particles [[1]]"
+    },
+    "Term_2": {
+      "links": {
+        "has_word": [
+          {"to": "Word_3", "value": "Carbonitride"},
+          {"to": "Word_4", "value": "Particles"}
+        ]
+      },
+      "name": "Carbonitride Particles",
+      "description": "Nb(C,N) and Ti(C,N) precipitates affecting recrystallization kinetics [[1]]"
+    },
+    "Term_3": {
+      "links": {
+        "has_word": [
+          {"to": "Word_5", "value": "Kinetics"}
+        ]
+      },
+      "name": "Kinetics",
+      "description": "Time-dependent analysis of recovery and recrystallization processes [[1]]"
+    }
+  },
+  "Word": {
+    "Word_1": {"name": "Primary"},
+    "Word_2": {"name": "Recrystallization"},
+    "Word_3": {"name": "Carbonitride"},
+    "Word_4": {"name": "Particles"},
+    "Word_5": {"name": "Kinetics"}
+  },
+  "Material_type": {
+    "Material_1": {
+      "links": {
+        "has_property": [
+          {"to": "Material_property_1", "value": "Nb content (0.01-0.06 wt%)"},
+          {"to": "Material_property_2", "value": "Grain size (100 µm)"}
+        ]
+      },
+      "name": "Low-carbon structural steel",
+      "description": "Microalloyed steel studied for recrystallization behavior [[1]]"
+    },
+    "Material_2": {
+      "name": "Austenite",
+      "description": "High-temperature phase undergoing deformation and recrystallization [[1]]"
+    },
+    "Material_3": {
+      "name": "Nb(C,N)",
+      "description": "Niobium carbonitride particles pinning grain boundaries [[1]]"
+    }
+  },
+  "Technology": {
+    "Technology_1": {
+      "links": {
+        "include_process": [
+          {"to": "Process_1"},
+          {"to": "Process_2"}
+        ]
+      },
+      "name": "Mathematical Modeling",
+      "description": "Computational approach simulating recrystallization and recovery [[1]]"
+    }
+  },
+  "Process": {
+    "Process_1": {
+      "links": {
+        "use_phenomenon": [
+          {"to": "Phenomenon_1"}
+        ]
+      },
+      "name": "Recrystallization",
+      "description": "Formation of strain-free grains via nucleation and growth [[1]]"
+    },
+    "Process_2": {
+      "name": "Recovery",
+      "description": "Dislocation rearrangement reducing stored energy before recrystallization [[1]]"
+    }
+  },
+  "Phenomenon": {
+    "Phenomenon_1": {
+      "name": "Dislocation annihilation",
+      "description": "Mechanism reducing dislocation density during recovery [[1]]"
+    },
+    "Phenomenon_2": {
+      "name": "Particle pinning",
+      "description": "Carbonitride particles impeding grain boundary migration [[1]]"
+    }
+  },
+  "Equipment": {
+    "Equipment_1": {
+      "name": "Python software",
+      "description": "Computational tool implementing the recrystallization model [[1]]"
+    }
+  },
+  "Topic": {
+    "Topic_1": {
+      "name": "Materials Science",
+      "description": "Study of microstructure evolution during thermal-mechanical processing [[1]]"
+    },
+    "Topic_2": {
+      "name": "Metallurgy",
+      "description": "Application of kinetic models to steel processing [[1]]"
+    }
+  },
+  "Organization": {
+    "Organization_1": {
+      "name": "I. M. Frantsevich Institute for Problems in Materials Science",
+      "description": "Ukrainian research institution affiliated with NAS [[1]]"
+    }
+  },
+  "Author": {
+    "Author_1": {
+      "links": {
+        "works_in": [
+          {"to": "Organization_1"}
+        ]
+      },
+      "name": "V. V. Kaverinsky",
+      "description": "Lead developer of the recrystallization kinetics model [[1]]"
+    },
+    "Author_2": {
+      "links": {
+        "works_in": [
+          {"to": "Organization_1"}
+        ]
+      },
+      "name": "Z. P. Sukhenko",
+      "description": "Co-author specializing in phase transformation modeling [[1]]"
+    }
+  },
+  "Article": {
+    "Article_1": {
+      "links": {
+        "has_author": [
+          {"to": "Author_1"},
+          {"to": "Author_2"}
+        ],
+        "deals_with_material": [
+          {"to": "Material_1"}
+        ],
+        "develops_technology": [
+          {"to": "Technology_1"}
+        ],
+        "belongs_to_topic": [
+          {"to": "Topic_1"},
+          {"to": "Topic_2"}
+        ],
+        "utilizes_equipment": [
+          {"to": "Equipment_1"}
+        ],
+        "uses_method": [
+          {"to": "Research_method_1"}
+        ]
+      },
+      "name": "Mathematical Modelling of Primary Recrystallization Kinetics and Precipitation of Carbonitride Particles in Steels. II. Recrystallization Kinetics",
+      "description": "2021 study on Nb-content effects during recrystallization [[1]]"
+    }
+  },
+  "Research_method": {
+    "Research_method_1": {
+      "links": {
+        "uses_method": [
+          {"to": "Term_3"}
+        ]
+      },
+      "name": "Kinetic simulation",
+      "description": "Time-dependent modeling of dislocation density evolution [[1]]"
+    }
+  },
+  "Material_property": {
+    "Material_property_1": {
+      "name": "Nb content",
+      "description": "Niobium concentration affecting particle precipitation (0.01-0.06 wt%) [[1]]"
+    },
+    "Material_property_2": {
+      "name": "Grain size",
+      "description": "Initial austenite grain size influencing nucleation sites (100 µm) [[1]]"
+    }
+  },
+  "Result": {
+    "Result_1": {
+      "links": {
+        "is_explained_by_phenomenon": [
+          {"to": "Phenomenon_2"}
+        ]
+      },
+      "name": "Slowed recrystallization",
+      "description": "Nb(C,N) particles delay grain growth in 0.06% Nb steel [[1]]"
+    },
+    "Result_2": {
+      "name": "Dislocation density reduction",
+      "description": "Recovery processes reduce dislocations by 50% within 200s at 900°C [[1]]"
+    }
+  }
+}

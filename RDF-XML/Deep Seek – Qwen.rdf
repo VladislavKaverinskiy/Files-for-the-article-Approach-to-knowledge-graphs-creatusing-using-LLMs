@@ -1,0 +1,290 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+         xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+         xmlns:ex="http://example.org/materials#">
+
+    <!-- Key_word entries -->
+    <rdf:Description rdf:about="http://example.org/Key_word/phase_diagrams">
+        <rdf:type rdf:resource="http://example.org/Key_word"/>
+        <ex:name>Phase Diagrams</ex:name>
+        <ex:description>Graphical representations of the phases of a material system as a function of temperature, pressure, and composition.</ex:description>
+    </rdf:Description>
+
+    <rdf:Description rdf:about="http://example.org/Key_word/kinetics_of_phase_transformations">
+        <rdf:type rdf:resource="http://example.org/Key_word"/>
+        <ex:name>Kinetics of Phase Transformations</ex:name>
+        <ex:description>Study of the rates and mechanisms of phase changes in materials.</ex:description>
+    </rdf:Description>
+
+    <rdf:Description rdf:about="http://example.org/Key_word/recrystallization">
+        <rdf:type rdf:resource="http://example.org/Key_word"/>
+        <ex:name>Recrystallization</ex:name>
+        <ex:description>Process of forming new crystal grains in a material to replace deformed ones during annealing.</ex:description>
+    </rdf:Description>
+
+    <rdf:Description rdf:about="http://example.org/Key_word/Ostwald_ripening">
+        <rdf:type rdf:resource="http://example.org/Key_word"/>
+        <ex:name>Ostwald Ripening</ex:name>
+        <ex:description>Phenomenon where larger particles grow at the expense of smaller ones due to interfacial energy differences.</ex:description>
+    </rdf:Description>
+
+    <rdf:Description rdf:about="http://example.org/Key_word/hot_brittleness">
+        <rdf:type rdf:resource="http://example.org/Key_word"/>
+        <ex:name>Hot Brittleness</ex:name>
+        <ex:description>Loss of ductility in materials at elevated temperatures during deformation.</ex:description>
+    </rdf:Description>
+
+    <!-- Technology entries -->
+    <rdf:Description rdf:about="http://example.org/Technology/mathematical_modeling_of_austenite_decomposition">
+        <rdf:type rdf:resource="http://example.org/Technology"/>
+        <ex:name>Mathematical Modeling of Austenite Decomposition</ex:name>
+        <ex:description>Computer-based model simulating phase transformations in alloyed steels under varying cooling rates.</ex:description>
+        
+        <ex:include_process>
+            <rdf:Description>
+                <ex:links_to rdf:resource="http://example.org/Process/ferritic_transformation"/>
+                <ex:has_value>quantitative</ex:has_value>
+            </rdf:Description>
+        </ex:include_process>
+        
+        <ex:include_process>
+            <rdf:Description>
+                <ex:links_to rdf:resource="http://example.org/Process/pearlitic_transformation"/>
+                <ex:has_value>quantitative</ex:has_value>
+            </rdf:Description>
+        </ex:include_process>
+        
+        <ex:applied_to_material>
+            <rdf:Description>
+                <ex:links_to rdf:resource="http://example.org/Material/alloyed_steel"/>
+                <ex:has_value>composition-dependent</ex:has_value>
+            </rdf:Description>
+        </ex:applied_to_material>
+        
+        <ex:involve_process>
+            <rdf:Description>
+                <ex:links_to rdf:resource="http://example.org/Process/phase_transformations"/>
+                <ex:has_value>thermodynamic and kinetic</ex:has_value>
+            </rdf:Description>
+        </ex:involve_process>
+    </rdf:Description>
+
+    <rdf:Description rdf:about="http://example.org/Technology/deformation_heat_processing">
+        <rdf:type rdf:resource="http://example.org/Technology"/>
+        <ex:name>Deformation Heat Processing</ex:name>
+        <ex:description>Sequential hot deformation and annealing to refine microstructure and enhance mechanical properties.</ex:description>
+        
+        <ex:include_process>
+            <rdf:Description>
+                <ex:links_to rdf:resource="http://example.org/Process/hot_deformation"/>
+                <ex:has_value>3-20% per stage</ex:has_value>
+            </rdf:Description>
+        </ex:include_process>
+        
+        <ex:include_process>
+            <rdf:Description>
+                <ex:links_to rdf:resource="http://example.org/Process/cold_work_hardening"/>
+                <ex:has_value>post-deformation</ex:has_value>
+            </rdf:Description>
+        </ex:include_process>
+        
+        <ex:applied_to_material>
+            <rdf:Description>
+                <ex:links_to rdf:resource="http://example.org/Material/Al_Si_alloy"/>
+                <ex:has_value>improves ductility and strength</ex:has_value>
+            </rdf:Description>
+        </ex:applied_to_material>
+    </rdf:Description>
+
+    <!-- Process entries -->
+    <rdf:Description rdf:about="http://example.org/Process/phase_transformations">
+        <rdf:type rdf:resource="http://example.org/Process"/>
+        <ex:name>Phase Transformations</ex:name>
+        <ex:description>Changes in material phases (e.g., austenite to ferrite) driven by thermodynamic and kinetic factors.</ex:description>
+        
+        <ex:use_phenomenon>
+            <rdf:Description>
+                <ex:links_to rdf:resource="http://example.org/Phenomenon/nucleation_and_growth"/>
+                <ex:has_value>kinetic-controlled</ex:has_value>
+            </rdf:Description>
+        </ex:use_phenomenon>
+    </rdf:Description>
+
+    <rdf:Description rdf:about="http://example.org/Process/carbonitride_precipitation">
+        <rdf:type rdf:resource="http://example.org/Process"/>
+        <ex:name>Carbonitride Precipitation</ex:name>
+        <ex:description>Formation of dispersed carbonitride particles in steel, affecting recrystallization and mechanical properties.</ex:description>
+        
+        <ex:use_phenomenon>
+            <rdf:Description>
+                <ex:links_to rdf:resource="http://example.org/Key_word/Ostwald_ripening"/>
+                <ex:has_value>particle coarsening</ex:has_value>
+            </rdf:Description>
+        </ex:use_phenomenon>
+    </rdf:Description>
+
+    <rdf:Description rdf:about="http://example.org/Process/hot_deformation">
+        <rdf:type rdf:resource="http://example.org/Process"/>
+        <ex:name>Hot Deformation</ex:name>
+        <ex:description>Plastic shaping of materials at elevated temperatures to refine microstructure.</ex:description>
+        
+        <ex:use_phenomenon>
+            <rdf:Description>
+                <ex:links_to rdf:resource="http://example.org/Key_word/hot_brittleness"/>
+                <ex:has_value>temperature-dependent</ex:has_value>
+            </rdf:Description>
+        </ex:use_phenomenon>
+    </rdf:Description>
+
+    <!-- Phenomenon entry -->
+    <rdf:Description rdf:about="http://example.org/Phenomenon/nucleation_and_growth">
+        <rdf:type rdf:resource="http://example.org/Phenomenon"/>
+        <ex:name>Nucleation and Growth</ex:name>
+        <ex:description>Formation and expansion of new phase nuclei in a material.</ex:description>
+    </rdf:Description>
+
+    <!-- Equipment entry -->
+    <rdf:Description rdf:about="http://example.org/Equipment/computer_program_C++">
+        <rdf:type rdf:resource="http://example.org/Equipment"/>
+        <ex:name>C++ Computer Program</ex:name>
+        <ex:description>Software tool for simulating phase transformations in alloyed steels.</ex:description>
+    </rdf:Description>
+
+    <!-- Topic entries -->
+    <rdf:Description rdf:about="http://example.org/Topic/materials_science">
+        <rdf:type rdf:resource="http://example.org/Topic"/>
+        <ex:name>Materials Science</ex:name>
+        <ex:description>Interdisciplinary field studying the properties and applications of materials.</ex:description>
+    </rdf:Description>
+
+    <rdf:Description rdf:about="http://example.org/Topic/metallurgy">
+        <rdf:type rdf:resource="http://example.org/Topic"/>
+        <ex:name>Metallurgy</ex:name>
+        <ex:description>Science of extracting, processing, and modifying metals and alloys.</ex:description>
+    </rdf:Description>
+
+    <!-- Organization entry -->
+    <rdf:Description rdf:about="http://example.org/Organization/I_M_Frantsevich_Institute">
+        <rdf:type rdf:resource="http://example.org/Organization"/>
+        <ex:name>I. M. Frantsevich Institute for Problems in Materials Science</ex:name>
+        <ex:description>Ukrainian research institute specializing in materials science and engineering.</ex:description>
+    </rdf:Description>
+
+    <!-- Author entry -->
+    <rdf:Description rdf:about="http://example.org/Author/V_V_Kaverynsky">
+        <rdf:type rdf:resource="http://example.org/Author"/>
+        <ex:name>V. V. Kaverynsky</ex:name>
+        <ex:description>Researcher in materials science, focusing on phase transformations and alloy processing.</ex:description>
+        
+        <ex:works_in>
+            <rdf:Description>
+                <ex:links_to rdf:resource="http://example.org/Organization/I_M_Frantsevich_Institute"/>
+                <ex:has_value>affiliation</ex:has_value>
+            </rdf:Description>
+        </ex:works_in>
+    </rdf:Description>
+
+    <!-- Article entry -->
+    <rdf:Description rdf:about="http://example.org/Article/MFiNT_39_1051">
+        <rdf:type rdf:resource="http://example.org/Article"/>
+        <ex:name>Mathematical Modelling of Kinetics of Decomposition of the Supercooled Austenite in Alloyed Steels</ex:name>
+        <ex:description>Develops a model to predict phase transformations in steels, validated against experimental data.</ex:description>
+        
+        <ex:deals_with_material>
+            <rdf:Description>
+                <ex:links_to rdf:resource="http://example.org/Material/alloyed_steel"/>
+                <ex:has_value>primary focus</ex:has_value>
+            </rdf:Description>
+        </ex:deals_with_material>
+        
+        <ex:studies_process>
+            <rdf:Description>
+                <ex:links_to rdf:resource="http://example.org/Process/phase_transformations"/>
+                <ex:has_value>kinetics and thermodynamics</ex:has_value>
+            </rdf:Description>
+        </ex:studies_process>
+        
+        <ex:has_results>
+            <rdf:Description>
+                <ex:links_to rdf:resource="http://example.org/Result/verified_model"/>
+                <ex:has_value>experimentally validated</ex:has_value>
+            </rdf:Description>
+        </ex:has_results>
+        
+        <ex:develops_technology>
+            <rdf:Description>
+                <ex:links_to rdf:resource="http://example.org/Technology/mathematical_modeling_of_austenite_decomposition"/>
+                <ex:has_value>C++ implementation</ex:has_value>
+            </rdf:Description>
+        </ex:develops_technology>
+        
+        <ex:belongs_to_topic>
+            <rdf:Description>
+                <ex:links_to rdf:resource="http://example.org/Topic/materials_science"/>
+                <ex:has_value>core</ex:has_value>
+            </rdf:Description>
+        </ex:belongs_to_topic>
+        
+        <ex:has_author>
+            <rdf:Description>
+                <ex:links_to rdf:resource="http://example.org/Author/V_V_Kaverynsky"/>
+                <ex:has_value>lead author</ex:has_value>
+            </rdf:Description>
+        </ex:has_author>
+        
+        <ex:uses_method>
+            <rdf:Description>
+                <ex:links_to rdf:resource="http://example.org/Research_method/CALPHAD_method"/>
+                <ex:has_value>thermodynamic calculations</ex:has_value>
+            </rdf:Description>
+        </ex:uses_method>
+        
+        <ex:includes_terms rdf:resource="http://example.org/Key_word/phase_diagrams"/>
+        <ex:includes_terms rdf:resource="http://example.org/Key_word/kinetics_of_phase_transformations"/>
+    </rdf:Description>
+
+    <!-- Research_method entry -->
+    <rdf:Description rdf:about="http://example.org/Research_method/CALPHAD_method">
+        <rdf:type rdf:resource="http://example.org/Research_method"/>
+        <ex:name>CALPHAD Method</ex:name>
+        <ex:description>Computational approach for calculating phase diagrams and thermodynamic properties.</ex:description>
+    </rdf:Description>
+
+    <!-- Material_property entries -->
+    <rdf:Description rdf:about="http://example.org/Material_property/ductility">
+        <rdf:type rdf:resource="http://example.org/Material_property"/>
+        <ex:name>Ductility</ex:name>
+        <ex:description>Ability of a material to deform under tensile stress without fracture.</ex:description>
+    </rdf:Description>
+
+    <rdf:Description rdf:about="http://example.org/Material_property/ultimate_tensile_strength">
+        <rdf:type rdf:resource="http://example.org/Material_property"/>
+        <ex:name>Ultimate Tensile Strength</ex:name>
+        <ex:description>Maximum stress a material can withstand while being stretched or pulled.</ex:description>
+    </rdf:Description>
+
+    <!-- Result entries -->
+    <rdf:Description rdf:about="http://example.org/Result/verified_model">
+        <rdf:type rdf:resource="http://example.org/Result"/>
+        <ex:name>Verified Model</ex:name>
+        <ex:description>Computer model validated against experimental data for phase transformation predictions.</ex:description>
+    </rdf:Description>
+
+    <rdf:Description rdf:about="http://example.org/Result/improved_ductility_and_strength">
+        <rdf:type rdf:resource="http://example.org/Result"/>
+        <ex:name>Improved Ductility and Strength</ex:name>
+        <ex:description>Enhanced mechanical properties in Al-Si alloys via deformation heat processing.</ex:description>
+    </rdf:Description>
+
+    <!-- Material entries (implied by links) -->
+    <rdf:Description rdf:about="http://example.org/Material/alloyed_steel">
+        <rdf:type rdf:resource="http://example.org/Material"/>
+        <ex:name>Alloyed Steel</ex:name>
+    </rdf:Description>
+
+    <rdf:Description rdf:about="http://example.org/Material/Al_Si_alloy">
+        <rdf:type rdf:resource="http://example.org/Material"/>
+        <ex:name>Al-Si Alloy</ex:name>
+    </rdf:Description>
+
+</rdf:RDF>
