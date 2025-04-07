@@ -1,0 +1,1 @@
+Here is an RDF/XML file. This file can be imported to Neo4J. You following tasks will be generation of Cypher queries from natural nanguage queries. The init parameters for import were: handleVocabUris: "IGNORE", handleMultival: "OVERWRITE", handleRDFTypes: "LABELS".
